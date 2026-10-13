@@ -1,0 +1,9 @@
+{
+  "FullModelId": "Packages.m3__fGTN__v6_72__b6_72_9_0.Models.650",
+  "FamilyId": "GTN",
+  "InstallationVersion": "6.72.9.0",
+  "Options": {
+    "taws": "Packages.m3__fGTN__v6_72__b6_72_9_0.SupportedSettings.taws.TAWS_B"
+  },
+  "ModuleData": {}
+}

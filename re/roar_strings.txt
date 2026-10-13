@@ -1,0 +1,552 @@
+﻿===== roar_pub.dll machine=0x14C
+  EXPORT 1 AddClient
+  EXPORT 2 AddEndPoint
+  EXPORT 3 AddGrowlEndPoint
+  EXPORT 4 AddGrowlEndPointUpdtSrc
+  EXPORT 5 AddGrowlRouterEndPoint
+  EXPORT 6 AddPacketFilter
+  EXPORT 7 AddRoute
+  EXPORT 8 AddTCPEndPoint
+  EXPORT 9 AddTokenPasser
+  EXPORT 10 AddUDPEndPoint
+  EXPORT 11 AddUDPEndPointUpdtSrc
+  EXPORT 12 AddVLRU
+  EXPORT 13 CleanupRoar
+  EXPORT 14 CreatePacketFilter
+  EXPORT 15 EnableLogging
+  EXPORT 16 EnableLoggingStream
+  EXPORT 17 FlushEndPoint
+  EXPORT 18 FlushFilter
+  EXPORT 19 GetAllEndPoints
+  EXPORT 20 GetAllRoutes
+  EXPORT 21 GetEndPointNameByUID
+  EXPORT 22 GetEndPointStatusByUID
+  EXPORT 23 GetEndPointUIDByName
+  EXPORT 24 GetEndpointType
+  EXPORT 25 GetMasterVersion
+  EXPORT 26 GetNewSlavePort
+  EXPORT 27 GetRawBytes
+  EXPORT 28 GetRoutes
+  EXPORT 29 GetRoutingStatus
+  EXPORT 30 GetSubscriptionPackets
+  EXPORT 31 GetUDPPortByName
+  EXPORT 32 InitializeRoar
+  EXPORT 33 LoadConfig
+  EXPORT 34 ReadyForCleanup
+  EXPORT 35 RemoveClient
+  EXPORT 36 RemoveEndPoint
+  EXPORT 37 RemoveRoute
+  EXPORT 38 RemoveSubscription
+  EXPORT 39 RemoveVLRU
+  EXPORT 40 ResetSubscription
+  EXPORT 41 SendEndPointCmd
+  EXPORT 42 SendFilterCmd
+  EXPORT 43 SendVLRUCmd
+  EXPORT 44 SetAccumulatorFramingInfo
+  EXPORT 45 SetDllPath
+  EXPORT 46 SetEndPointCRCInfo
+  EXPORT 47 SetFilterAll
+  EXPORT 48 SetFilterKeyList
+  EXPORT 49 SetPluginPath
+  EXPORT 50 StartEndPointReceiver
+  EXPORT 51 StartRouting
+  EXPORT 52 StartTCPServer
+  EXPORT 53 StopEndPointReceiver
+  EXPORT 54 StopEndPointReceiverNoClear
+  EXPORT 55 StopRouting
+  EXPORT 56 StopTransmitPeriodic
+  EXPORT 57 Subscribe
+  EXPORT 58 TransmitPacket
+  EXPORT 59 TransmitPacketPeriodic
+  EXPORT 60 UpdatePeriodicPacket
+  IMPORT dbghelp.dll: SymFunctionTableAccess, SymCleanup, SymGetLineFromAddr, SymInitialize, SymSetOptions, StackWalk, SymGetSymFromAddr, SymGetModuleBase
+  IMPORT SHLWAPI.dll: PathFileExistsA
+  IMPORT WS2_32.dll: inet_pton, freeaddrinfo, getaddrinfo, WSAGetLastError, socket, shutdown, setsockopt, WSACleanup, ntohs, listen, htons, getsockname, connect, closesocket, bind, accept, recvfrom, sendto, recv, WSAStartup, send, select
+  IMPORT KERNEL32.dll: GetFileAttributesA, GetEnvironmentVariableA, OutputDebugStringW, SetEndOfFile, WriteConsoleW, HeapSize, CreateFileW, SetStdHandle, GetProcessHeap, SetEnvironmentVariableW, FreeEnvironmentStringsW, GetEnvironmentStringsW, GetCommandLineW, GetCommandLineA, GetOEMCP, GetACP, IsValidCodePage, FindNextFileW, FindFirstFileExW, FindClose, GetTimeZoneInformation, MoveFileExW, DeleteFileW, ReadConsoleW, SetFilePointerEx, GetFileSizeEx, GetConsoleMode, GetConsoleCP, FlushFileBuffers, GetFileType, GetStdHandle, FreeLibrary, GetProcAddress, RtlCaptureContext, GetLastError, GetCurrentProcess, GetCurrentThread, GetModuleFileNameA, CreateFileA, ReadFile ...
+  --- interesting strings (440) ---
+     ROAR_acc_field_types.
+     ended for EndPoint 
+     for EndPoint: 
+     for EndPointReceiver: 
+     will now be routed to 
+    ". One of the following fields was missing within the route or its value type was incorrect: (rx_ep: string), (tx_ep: string), (rx_chnl: uint), (tx_chnl: uint),
+    ' endpoint receiver. Error: 
+    ' endpoint. Error: 
+    ' name. The existing endpoint will be used.
+    ) [(assertionPassed = base::utils::File::pathExists(configurationFile.c_str(), true)) == true
+    ) [currConfig != ConfigurationType::Unknown
+    ) doesn't exist in the config.
+    ) for the route (
+    ) is invalid. Please specify a format name that exists in the type ROAR_prtcl_fmt_type or '*' (wildcard).
+    --default-log-file
+    .?AV?$AbstractRegistry@VConfiguration@el@@V?$vector@PAVConfiguration@el@@V?$allocator@PAVConfiguration@el@@@std@@@std@@@utils@base@el@@
+    .?AV?$EndPointContainer@VSocketEndPoint@ROAR@@@ROAR@@
+    .?AV?$EndPointContainer@VTokenPasser@ROAR@@@ROAR@@
+    .?AV?$RegistryWithPred@VConfiguration@el@@VPredicate@12@@utils@base@el@@
+    .?AV?$_Ref_count_obj2@UROAR_pkt_type@@@std@@
+    .?AV?$_Ref_count_obj2@VEndAccumulatorState@ROAR@@@std@@
+    .?AV?$_Ref_count_obj2@VEndPacketAccumulatorState@ROAR@@@std@@
+    .?AV?$_Ref_count_obj2@VFixedSizeAccumulatorState@ROAR@@@std@@
+    .?AV?$_Ref_count_obj2@VGettingDataState@ROAR@@@std@@
+    .?AV?$_Ref_count_obj2@VGrowlAccumulatorEndPoint@ROAR@@@std@@
+    .?AV?$_Ref_count_obj2@VGrowlEndPoint@ROAR@@@std@@
+    .?AV?$_Ref_count_obj2@VGrowlRouterEndPoint@ROAR@@@std@@
+    .?AV?$_Ref_count_obj2@VHoldingTokenState@ROAR@@@std@@
+    .?AV?$_Ref_count_obj2@VRawPacketAccumulatorState@ROAR@@@std@@
+    .?AV?$_Ref_count_obj2@VSizePacketAccumulatorState@ROAR@@@std@@
+    .?AV?$_Ref_count_obj2@VSocketAccumulatorEndPoint@ROAR@@@std@@
+    .?AV?$_Ref_count_obj2@VSocketEndPoint@ROAR@@@std@@
+    .?AV?$_Ref_count_obj2@VStartAccumulatorState@ROAR@@@std@@
+    .?AV?$_Ref_count_obj2@VTDMManager@ROAR@@@std@@
+    .?AV?$_Ref_count_obj2@VTokenIdleState@ROAR@@@std@@
+    .?AV?$_Ref_count_obj2@VTokenPasser@ROAR@@@std@@
+    .?AV?$_Ref_count_obj2@VUDPRoarPacket@ROAR@@@std@@
+    .?AV?$_Ref_count_obj2@VWaitingOnHoldState@ROAR@@@std@@
+    .?AV?$enable_shared_from_this@VTokenPasser@ROAR@@@std@@
+    .?AV?$iSourceContainer@UROAR_ip_source_type@@@ROAR@@
+    .?AVAccumulatorConsumer@ROAR@@
+    .?AVAccumulatorState@ROAR@@
+    .?AVAddClientRemoteCommand@ROAR@@
+    .?AVAddEndPointRemoteCommand@ROAR@@
+    .?AVAddGrowlEndPointRemoteCommand@ROAR@@
+    .?AVAddGrowlRouterRemoteCommand@ROAR@@
+    .?AVAddGrowlUpdtSrcRemoteCommand@ROAR@@
+    .?AVAddPktFilterRemoteCommand@ROAR@@
+    .?AVAddRouteRemoteCommand@ROAR@@
+    .?AVAddTCPEndPointRemoteCommand@ROAR@@
+    .?AVAddTokenPasserRemoteCommand@ROAR@@
+    .?AVAddUDPEPUpdtSrcRemoteCommand@ROAR@@
+    .?AVAddUDPEndPointRemoteCommand@ROAR@@
+    .?AVAddVLRURemoteCommand@ROAR@@
+    .?AVCmdService@ROAR@@
+    .?AVConfiguration@el@@
+    .?AVConfigurations@el@@
+    .?AVCreatePktFilterRemoteCommand@ROAR@@
+    .?AVEnableLoggingRemoteCommand@ROAR@@
+    .?AVEndAccumulatorState@ROAR@@
+    .?AVEndPacketAccumulatorState@ROAR@@
+    .?AVEndPoint@ROAR@@
+    .?AVEndPointSpecificRemoteCommand@ROAR@@
+    .?AVEndPointTransmitter@ROAR@@
+    .?AVFilterSpecificRemoteCommand@ROAR@@
+    .?AVFixedSizeAccumulatorState@ROAR@@
+    .?AVFlushEndPointRemoteCommand@ROAR@@
+    .?AVFlushFilterRemoteCommand@ROAR@@
+    .?AVGetAllEndPointsRemoteCommand@ROAR@@
+    .?AVGetAllRoutesRemoteCommand@ROAR@@
+    .?AVGetEndPointByNameRemoteCommand@ROAR@@
+    .?AVGetEndpointTypeRemoteCommand@ROAR@@
+    .?AVGetNameByUIDRemoteCommand@ROAR@@
+    .?AVGetRawBytesRemoteCommand@ROAR@@
+    .?AVGetRoutesRemoteCommand@ROAR@@
+    .?AVGetRoutingStatusRemoteCommand@ROAR@@
+    .?AVGetStatusByUIDRemoteCommand@ROAR@@
+    .?AVGetSubscriptionPacketsRemoteCommand@ROAR@@
+    .?AVGetUDPPortByNameRemoteCommand@ROAR@@
+    .?AVGettingDataState@ROAR@@
+    .?AVGrowlAccumulatorEndPoint@ROAR@@
+    .?AVGrowlEndPoint@ROAR@@
+    .?AVGrowlRouterEndPoint@ROAR@@
+    .?AVHoldingTokenState@ROAR@@
+    .?AVIAccumulatorReporter@ROAR@@
+    .?AVIPEndPoint@ROAR@@
+    .?AVInvalidRemoteCommand@ROAR@@
+    .?AVLoadConfigRemoteCommand@ROAR@@
+    .?AVMasterCmdServer@ROAR@@
+    .?AVMasterCmdService@ROAR@@
+    .?AVMasterInfo@ROAR@@
+    .?AVMasterInfoWriter@ROAR@@
+    .?AVPortConflictRequestRemoteCommand@ROAR@@
+    .?AVRawPacketAccumulatorState@ROAR@@
+    .?AVRegisteredHitCounters@base@el@@
+    .?AVRegisteredLoggers@base@el@@
+    .?AVRemoteCommand@ROAR@@
+    .?AVRemoveClientRemoteCommand@ROAR@@
+    .?AVRemoveEndPointRemoteCommand@ROAR@@
+    .?AVRemoveRouteRemoteCommand@ROAR@@
+    .?AVRemoveSubscriptionRemoteCommand@ROAR@@
+    .?AVRemoveVLRURemoteCommand@ROAR@@
+    .?AVResetSubscriptionRemoteCommand@ROAR@@
+    .?AVRoarPacket@ROAR@@
+    .?AVSendVLRUCmdRemoteCommand@ROAR@@
+    .?AVSetAccumulatorFramingInfoRemoteCommand@ROAR@@
+    .?AVSetEndPointCRCInfoRemoteCommand@ROAR@@
+    .?AVSetFilterAllRemoteCommand@ROAR@@
+    .?AVSetFilterKeysRemoteCommand@ROAR@@
+    .?AVSizePacketAccumulatorState@ROAR@@
+    .?AVSocketAccumulatorEndPoint@ROAR@@
+    .?AVSocketEndPoint@ROAR@@
+    .?AVSocketEndPointContainer@ROAR@@
+    .?AVStartAccumulatorState@ROAR@@
+    .?AVStartRoutingRemoteCommand@ROAR@@
+    .?AVStopRoutingRemoteCommand@ROAR@@
+    .?AVStopTransmitPeriodicRemoteCommand@ROAR@@
+    .?AVSubscribeRemoteCommand@ROAR@@
+    .?AVSubscription@ROAR@@
+    .?AVTCPCmdServer@ROAR@@
+    .?AVTDMCmdHandler@ROAR@@
+    .?AVTDMContainer@ROAR@@
+    .?AVTDMInterface@ROAR@@
+    .?AVTDMManager@ROAR@@
+    .?AVToggleEndPointRcvrRemoteCommand@ROAR@@
+    .?AVTokenIdleState@ROAR@@
+    .?AVTokenPasser@ROAR@@
+    .?AVTokenPasserContainer@ROAR@@
+    .?AVTokenPassingState@ROAR@@
+    .?AVTransmitPacketPeriodicRemoteCommand@ROAR@@
+    .?AVTransmitPacketRemoteCommand@ROAR@@
+    .?AVTypedConfigurations@base@el@@
+    .?AVUDPAccumulatorConsumer@ROAR@@
+    .?AVUDPRoarPacket@ROAR@@
+    .?AVUpdatePeriodicRemoteCommand@ROAR@@
+    .?AVVLRU@ROAR@@
+    .?AVVLRUCmdHandler@ROAR@@
+    .?AVVLRUContainer@ROAR@@
+    .?AVVLRUInterface@ROAR@@
+    .?AVWaitingOnHoldState@ROAR@@
+    ?roar_log.cfg
+    A packet that is trying to be transmitted is too large. Please contact ANTS support. Expected: 
+    AddClient
+    AddEndPoint
+    AddGrowlEndPoint
+    AddGrowlEndPointUpdtSrc
+    AddGrowlRouterEndPoint
+    AddRoute
+    AddTCPEndPoint
+    AddUDPEndPoint
+    AddUDPEndPointUpdtSrc
+    AddVLRU
+    Added EndPoint 
+    Added client. Total number of connected clients: 
+    Added dll plugin for EndPoint type 
+    Added dll plugin for Filter type 
+    Adding EndPoint type: 
+    Adding GROWL EndPoint
+    Adding GrowlRouter
+    Adding Route: rx_ep=
+    Adding TCP EndPoint
+    Adding TokenPasser to EndPoint: 
+    Adding UDP EndPoint
+    Adding new VLRU << type: 
+    Adding receiving endpoint 
+    All EndPoint resources related to routing table have been released.
+    All clients removed. Signal given to clean up ROAR.
+    An endPoint with the name '
+    An endpoint already exists with the '
+    Binding TCP Listening socket to: 
+    Bound TCP Server socket to port:
+    C:\Users\nicolg\fastGit\roar.net\src\support\routers\tmp\RoarRouter.Bin.19.5.1.0\repo\build\Release\output\roar_pub.pdb
+    CROAR_MASTER.bin
+    Cancelling parsing of JSON. Error Occurred while parsing.
+    Cannot get endpoint ID for 
+    Cleaning up ROAR
+    CleanupRoar
+    Client closed connection
+    Command Server socket failed to accept a client with error: %d
+    Configuration error - No ending quote found in [
+    Configuration file [
+    Configuration value not a valid integer [
+    Could not connect to master at the given port. Assuming the file was left after a crash.
+    Could not create a TCP socket to test current master.
+    Could not load empty file for logging, please re-check your configurations for level [
+    Could not stop EndPointTransmitter for EndPoint: 
+    Could not stop Rx thread for EndPoint: 
+    Could not stop TokenPasser for EndPoint: 
+    Could not stop a Remote Command Client thread.
+    Could not stop a Remote TCP Server thread.
+    Could not stop routing for EndPoint: 
+    Couldn't find the given rx_ep for route (
+    Couldn't find the given tx_ep for route (
+    Creating TCP Socket...
+    Creating UDP Socket...
+    Creating dynamic rx port for SocketEndPoint 
+    Creating dynamic tx port for SocketEndPoint 
+    Creating rx port for SocketEndPoint 
+    DLL plugin for EndPoint type 
+    Destroying EndPointTransmitter 
+    Destroying SocketEndPoint: 
+    Disabling packet routing and EndPointReceivers...
+    Disabling routing flag for EndPointReceiver: 
+    Duplicate EndPoint. Not adding 
+    Empty configuration value for [
+    Enabling packet routing and starting EndPointReceivers...
+    Enabling routing flag for EndPointReceiver: 
+    EndPoint added to Routing Table.
+    EndPoint does not have any routes asscoiated with it. Discarding...
+    EndPoint name size too large (Max 45): 
+    EndPointReceiver Rx thread status: 
+    EndPointReceiver routing thread status: 
+    EndPointTransmitter thread status: 
+    Error obtaining dynamic rx port. Port not bound.
+    Error obtaining dynamic tx port.
+    Error occured while getting ROAR version: 
+    Error stopping TCP Server:
+    FATAL ERROR when bulk receiving from EndPoint: 
+    FATAL ERROR when receiving from EndPoint: 
+    FATAL ERROR when transmitting from EndPoint: 
+    Failed to parse EndPoint tag: 
+    Failed to parse route tag: 
+    Failed to start the command server! In order to use this feature please restart Roar.
+    FlushEndPoint
+    GARINCEndPoint
+    GetAllEndPoints
+    GetAllRoutes
+    GetCPInfo
+    GetEndPointInterface
+    GetEndPointNameByUID
+    GetEndPointStatusByUID
+    GetEndPointUIDByName
+    GetEndpointType
+    GetMasterVersion
+    GetNewSlavePort
+    GetRoutes
+    GetUDPPortByName
+    GrowlEndPoint
+    GrowlRouterEndPoint
+    HSDB2EndPoint
+    HSDBEndPoint
+    Incorrect subscription mask length or number of packet keys sent. Please contact ANTS support. Expected mask bytes: 
+    InitializeRoar
+    Initializing Roar...
+    Invalid EndPoint provided: 
+    Invalid ROAR Command received.
+    Invalid TDM VLRU command argument: 
+    Invalid VLRU ID provided for ROAR_TDM_ADD command
+    Listening for new clients on port 
+    LoadConfig
+    Master file was found. Check if we can connect to it.
+    No DLL for EndPoint type 
+    No DLL for VLRU type 
+    No receiver associated EndPoint 
+    Packet size reported by packet (
+    PacketRouter::AddRoute() Rx EndPoint NOT found. Creating EndPoint list
+    PacketRouter::AddRoute() Rx EndPoint found. Adding channel to EndPoint
+    Packets comming from port 
+    Preparing TCP Client's socket buffers.
+    Preparing the TCP Command Server...
+    ProcessRoarCommand recv failed with error: 
+    REMOVE_VLRU_COMMAND
+    ROAR master is already running.
+    ROAR_A429_FMT
+    ROAR_A453_FMT
+    ROAR_A717_FMT
+    ROAR_ADD_CLIENT
+    ROAR_ADD_ENDPOINT
+    ROAR_ADD_GROWL_ENDPOINT
+    ROAR_ADD_GROWL_ROUTER
+    ROAR_ADD_GROWL_UPDT_SRC
+    ROAR_ADD_PKT_FILTER
+    ROAR_ADD_ROUTE
+    ROAR_ADD_TCP_ENDPOINT
+    ROAR_ADD_TKN_PASSER
+    ROAR_ADD_UDP_ENDPOINT
+    ROAR_ADD_UDP_EP_UPDT_SRC
+    ROAR_ADD_VLRU
+    ROAR_ANALOG_FMT
+    ROAR_CAN_FMT
+    ROAR_CMD_FMT
+    ROAR_CPU_REG_FMT
+    ROAR_CREATE_PKT_FILTER
+    ROAR_DISCRETE_BLK_FMT
+    ROAR_DISCRETE_IND_FMT
+    ROAR_ENABLE_LOGGING
+    ROAR_EP_SPECIFIC_CMD
+    ROAR_FIL_SPECIFIC_CMD
+    ROAR_FLUSH_ENDPOINT
+    ROAR_FLUSH_FILTER
+    ROAR_GET_ALL_ENDPOINTS
+    ROAR_GET_ALL_ROUTES
+    ROAR_GET_EP_BY_NAME
+    ROAR_GET_EP_TYPE
+    ROAR_GET_NAME_BY_UID
+    ROAR_GET_RAW_BYTES
+    ROAR_GET_ROUTES
+    ROAR_GET_ROUTING_STATUS
+    ROAR_GET_STATUS_BY_UID
+    ROAR_GET_SUBSCRIPTION_PKTS
+    ROAR_GET_UDP_PORT_BY_NAME
+    ROAR_HSDB_FMT
+    ROAR_HSDB_RAW_FMT
+    ROAR_INTERNAL_SENSOR_FMT
+    ROAR_LOAD_CONFIG
+    ROAR_MASTER_PORT_FILE_LOCK
+    ROAR_NONE_FMT
+    ROAR_PORT_CONFLICT_REQUEST
+    ROAR_REMOVE_CLIENT
+    ROAR_REMOVE_ENDPOINT
+    ROAR_REMOVE_ROUTE
+    ROAR_REMOVE_SUBSCRIPTION
+    ROAR_RESET_SUBSCRIPTION
+    ROAR_ROAR_START_ROUTING
+    ROAR_RS232_FMT
+    ROAR_RS485_FMT
+    ROAR_SET_ENDPOINT_CRC_INFO
+    ROAR_SET_FILTER_ALL
+    ROAR_SET_FILTER_KEYS
+    ROAR_STOP_PERIODIC
+    ROAR_STOP_ROUTING
+    ROAR_SUBSCRIBE
+    ROAR_TOGGLE_ENDPOINT_RECEIVER
+    ROAR_TRANSMIT_PKT
+    ROAR_TX_PERIODIC
+    ROAR_UPDATE_PERIODIC
+    Reading master info file: %s
+    Receiving Loop Ended for EndPoint: 
+    Releasing resources for all EndPoints found in routing table...
+    Remote Command Client closed.
+    Remote Command Client closing...
+    RemoveClient
+    RemoveEndPoint
+    RemoveRoute
+    RemoveVLRU
+    Removed client. Remaining number of connected clients: 
+    Removing EndPoint and route since there are no more Destinations.
+    Removing EndPoint with UID 
+    Removing EndPoint: 
+    Removing VLRU # 
+    Removing receiving EndPoint too.
+    Reported number of packet keys in filter log list is incorrect. Please contact ANTS support. Expected: 
+    Reserving resources for transmitting endpoint.
+    Resources already acquired... Starting EndPointReceiver: 
+    Roar is already routing...
+    Roar is no longer actively routing packets.
+    Roar is now actively routing packets!
+    Routing Loop Ended for EndPoint: 
+    SEND_VLRU_CMD_COMMAND
+    SET_ENDPOINT_FRAME_INFO
+    Searching for Roar Master Port temporary file.
+    SendEndPointCmd
+    SendVLRUCmd
+    SerialEndPoint
+    Set Plugin Path to 
+    SetEndPointCRCInfo
+    SetPluginPath
+    Setting receiving endpoint 
+    Setting up Master server.
+    Shutting down Receiving Loop for EndPoint: 
+    Shutting down TCP command server
+    Shutting down Token Loop for EndPoint: 
+    Shutting down Transmit Loop for EndPoint: 
+    Shutting down bulk Receiving Loop for EndPoint: 
+    Size of GetAllEndPoints() buffer too small for the number of EndPoints.
+    Size of GetAllRoutes() buffer too small for the number of routes.
+    Size of GetRoutes() buffer too small for the number of routes.
+    SocketEndPoint 
+    Something went wrong while setting EndPointTransmitter's unique ID
+    StartEndPointReceiver
+    StartTCPServer
+    Started server. Creating Roar Master temporary File.
+    Starting to serve TCP Client...
+    StopEndPointReceiver
+    StopEndPointReceiverNoClear
+    Stopping all EndPointReceivers and releasing their resources.
+    Stopping all EndPointTransmitters.
+    Successfully joined Remote Command Client thread.
+    Successfully joined Remote TCP Server thread.
+    Successfully joined the Rx thread for EndPoint: 
+    Successfully joined the routing thread for EndPoint: 
+    Successfully joined the thread for EndPoint: 
+    TCPEndPoint
+    The ADD_TDM_VLRU command was not executed. Bad size of packet. Expected: 
+    The dest_port provided is of the wrong type. The dest_port can only be a uint32 or string. If a string is provided the string will be assumed to be a project na
+    The dest_port string provided for the UDPEndPoint could not be found.
+    The master_port provided is of the wrong type. The master_port can only be a uint32 or string. If a string is provided the string will be assumed to be a projec
+    The router provided is of the wrong type. The router can only be a string.
+    The router string provided for the GrowlRouterEndPoint could not be found.
+    The src_port provided is of the wrong type. The src_port can only be a uint32 or string. If a string is provided the string will be assumed to be a project name
+    The src_port provided is of the wrong type. The src_port can only be a uint32.
+    The src_port string provided for the UDPEndPoint could not be found.
+    This endpoint does not support Nagle's algorithm
+    This file contains a duplicate EndPoint type: 
+    This file does not contain the proper functions to be a PacketFilter Plugin.
+    This file does not contain the proper functions to be an EndPoint Plugin.
+    Token Loop Ended for EndPoint: 
+    Too many EndPointTransmitters created, not creating new Transmitter
+    UDPEndPoint
+    Unable to find EndPoint (
+    Unable to find an "accumulator" tag. This EndPoint must provide accumulator settings in order for Roar to know when a frame ends and begins.
+    Unable to open configuration file [
+    Unable to parse configuration line: 
+    Unable to parse the route "
+    Unique ID for EndPointTransmitter 
+    Unrecognized configuration [
+    W:C:\Users\nicolg\fastGit\roar.net\src\support\routers\tmp\RoarRouter.Bin.19.5.1.0\repo\src\plugins\cmn\roarpacket.cpp
+    W:portuguese-brazilian
+    W:roar_pub
+    W:roar_pub.dll
+    While parsing an EndPoint the type field was invalid: 
+    Wrote port 
+    [Roar master file] TCP port: %d, UDP Port: %d, GetVersion: %s
+    ]. Not registering this logger.
+    address family not supported
+    already connected
+    broken pipe
+    client recv failed with error: 
+    connection aborted
+    connection already in progress
+    connection refused
+    connection reset
+    dest_port
+    endpoints
+    function not supported
+    master_addr
+    master_port
+    not connected
+    not supported
+    operation not supported
+    protocol not supported
+    roar_log_cfg.temp
+    roar_pub.dll
+    router
+    routes
+    rx_port
+    src_port
+    this_lru
+    tx_port
+    vwError trying to create a subscription for EndPoint: 
+===== roar.exe machine=0x14C
+  IMPORT KERNEL32.dll: GetStdHandle, CloseHandle, WaitForSingleObject, TerminateThread, SetConsoleCtrlHandler, WriteConsoleInputW, WriteConsoleW, HeapSize, CreateFileW, SetStdHandle, GetProcessHeap, SetEnvironmentVariableW, FreeEnvironmentStringsW, GetEnvironmentStringsW, GetEnvironmentVariableA, GetFileAttributesA, GetSystemTimeAsFileTime, RaiseException, QueryPerformanceCounter, QueryPerformanceFrequency, WaitForSingleObjectEx, Sleep, GetCurrentThreadId, GetExitCodeThread, InitializeSRWLock, ReleaseSRWLockExclusive, AcquireSRWLockExclusive, EnterCriticalSection, LeaveCriticalSection, InitializeCriticalSectionEx, TryEnterCriticalSection, DeleteCriticalSection, InitializeConditionVariable, WakeConditionVariable, WakeAllConditionVariable, SleepConditionVariableCS, SleepConditionVariableSRW, WideCharToMultiByte, GetModuleHandleW, GetProcAddress ...
+  IMPORT USER32.dll: MapVirtualKeyW
+  IMPORT roar_pub.dll: ReadyForCleanup, SetDllPath, InitializeRoar, CleanupRoar, LoadConfig
+  --- interesting strings (41) ---
+    --default-log-file
+    .?AV?$AbstractRegistry@VConfiguration@el@@V?$vector@PAVConfiguration@el@@V?$allocator@PAVConfiguration@el@@@std@@@std@@@utils@base@el@@
+    .?AV?$RegistryWithPred@VConfiguration@el@@VPredicate@12@@utils@base@el@@
+    .?AVConfiguration@el@@
+    .?AVConfigurations@el@@
+    .?AVRegisteredHitCounters@base@el@@
+    .?AVRegisteredLoggers@base@el@@
+    .?AVTypedConfigurations@base@el@@
+    C:\Users\nicolg\fastGit\roar.net\src\support\routers\tmp\RoarRouter.Bin.19.5.1.0\repo\build\Release\output\roar.pdb
+    CleanupRoar
+    Configuration value not a valid integer [
+    Could not load empty file for logging, please re-check your configurations for level [
+    Croar_log.cfg
+    GetCPInfo
+    InitializeRoar
+    LoadConfig
+    Roar_Master
+    W:portuguese-brazilian
+    W:roar.exe
+    ]. Not registering this logger.
+    address family not supported
+    already connected
+    boost::program_options misconfiguration: choose one or other of 'command_line_style::allow_slash_for_short' (slashes) or 'command_line_style::allow_dash_for_sho
+    boost::program_options misconfiguration: choose one or other of 'command_line_style::long_allow_next' (whitespace separated arguments) or 'command_line_style::l
+    boost::program_options misconfiguration: choose one or other of 'command_line_style::short_allow_next' (whitespace separated arguments) or 'command_line_style::
+    broken pipe
+    config
+    config,c
+    connection aborted
+    connection already in progress
+    connection refused
+    connection reset
+    function not supported
+    not connected
+    not supported
+    operation not supported
+    protocol not supported
+    roar_log_cfg.temp
+    roar_pub.dll
+    set location of the config file to read in
+    the options configuration file contains an invalid line '%invalid_line%'

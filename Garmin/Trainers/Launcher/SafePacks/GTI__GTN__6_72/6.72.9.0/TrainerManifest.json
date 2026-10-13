@@ -1,0 +1,322 @@
+{
+  "ManifestVersion": 3,
+  "FamilyId": "GTN",
+  "VersionId": "6_72",
+  "BinaryVersion": "6.72.9.0",
+  "DisplayName": "GTN",
+  "VersionString": "6.72",
+  "ExecutablePath": "bin\\GTN Simulator.exe",
+  "AvionicsType": "NAVIGATOR",
+  "IconImagePath": "images\\gtn_family.png",
+  "MaxInstances": 1,
+  "Models": {
+    "750": {
+      "id": "750",
+      "Name": "GTN 750",
+      "IconImagePath": "images\\gtn_750_256.png",
+      "DisplayOrderIndex": 9008,
+      "Winfs": {
+        "links": [
+          {
+            "packagePath": "data\\Resources\\resource_files_7xx.gca",
+            "winfs": "resource_files_7xx.gca"
+          }
+        ]
+      }
+    },
+    "725": {
+      "id": "725",
+      "Name": "GTN 725",
+      "IconImagePath": "images\\gtn_725_256.png",
+      "DisplayOrderIndex": 9006,
+      "Winfs": {
+        "links": [
+          {
+            "packagePath": "data\\Resources\\resource_files_7xx.gca",
+            "winfs": "resource_files_7xx.gca"
+          }
+        ]
+      }
+    },
+    "650": {
+      "id": "650",
+      "Name": "GTN 650",
+      "IconImagePath": "images\\gtn_650_256.png",
+      "DisplayOrderIndex": 9004,
+      "Winfs": {
+        "links": [
+          {
+            "packagePath": "data\\Resources\\resource_files_6xx.gca",
+            "winfs": "resource_files_6xx.gca"
+          }
+        ]
+      }
+    },
+    "635": {
+      "id": "635",
+      "Name": "GTN 635",
+      "IconImagePath": "images\\gtn_650_256.png",
+      "DisplayOrderIndex": 9002,
+      "Winfs": {
+        "links": [
+          {
+            "packagePath": "data\\Resources\\resource_files_6xx.gca",
+            "winfs": "resource_files_6xx.gca"
+          }
+        ]
+      }
+    },
+    "625": {
+      "id": "625",
+      "Name": "GTN 625",
+      "IconImagePath": "images\\gtn_650_256.png",
+      "DisplayOrderIndex": 9000,
+      "Winfs": {
+        "links": [
+          {
+            "packagePath": "data\\Resources\\resource_files_6xx.gca",
+            "winfs": "resource_files_6xx.gca"
+          }
+        ]
+      }
+    }
+  },
+  "SupportedAirframes": [
+    "SINGLE",
+    "MULTI",
+    "ROTOR",
+    "SINGLETURBO",
+    "TURBO"
+  ],
+  "SupportedSettings": {
+    "taws": {
+      "id": "taws",
+      "DisplayText": "Terrain Mode",
+      "Description": "Determines the terrain mode of the GTN.",
+      "DefaultValue": "TAWS_B",
+      "UIControl": "PICKLIST",
+      "IsDisplayed": true,
+      "SupportedValues": {
+        "TAWS_B": {
+          "DisplayText": "TAWS B",
+          "id": "TAWS_B",
+          "SwitchValue": "TAWS_B",
+          "OptionDescription": "TAWS B",
+          "Constraints": [
+            {
+              "SettingToObserve": "Airframe",
+              "DisableOnValues": [
+                "ROTOR"
+              ]
+            }
+          ]
+        },
+        "HTAWS_B": {
+          "DisplayText": "TAWS B",
+          "id": "HTAWS_B",
+          "SwitchValue": "HTAWS_B",
+          "OptionDescription": "TAWS B",
+          "Constraints": [
+            {
+              "SettingToObserve": "Airframe",
+              "EnableOnValues": [
+                "ROTOR"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "DataFormats": {
+    "DataRouterClientVersion": "19.2.7.0",
+    "Instances": {
+      "all": {
+        "HSDB": 4,
+        "IN": {
+          "A429": {
+            "0": "GDU"
+          },
+          "GENERIC": {
+            "0": "RDMP"
+          }
+        },
+        "OUT": {
+          "A429": {
+            "0": "GAMA",
+            "1": "NAV"
+          },
+          "RS232": {
+            "0": "MAPMX"
+          },
+          "GENERIC": {
+            "0": "RDMP"
+          }
+        }
+      }
+    }
+  },
+  "Winfs": {
+    "Essentials": [
+      {
+        "Transform": {
+          "links": [
+            {
+              "packagePath": "data\\audio\\audio.gca",
+              "winfs": "audio.gca"
+            },
+            {
+              "packagePath": "data\\Resources\\resource_files_6xx.gca",
+              "winfs": "resource_files_6xx.gca"
+            },
+            {
+              "packagePath": "data\\Resources\\resource_files_7xx.gca",
+              "winfs": "resource_files_7xx.gca"
+            },
+            {
+              "winfs": "gdl69",
+              "packagePath": "data\\gdl69"
+            },
+            {
+              "winfs": "gdl88",
+              "packagePath": "data\\gdl88"
+            },
+            {
+              "winfs": "gsr56",
+              "packagePath": "data\\gsr56"
+            },
+            {
+              "winfs": "gwx68",
+              "packagePath": "data\\gwx68"
+            },
+            {
+              "winfs": "WWWx",
+              "packagePath": "data\\WWWx"
+            },
+            {
+              "packagePath": "data\\chklist.ace",
+              "winfs": "chklist.ace"
+            },
+            {
+              "packagePath": "data\\user.wpt",
+              "winfs": "user.wpt"
+            }
+          ]
+        }
+      }
+    ],
+    "StartingUserData": [
+      {
+        "Transform": {
+          "copy": [
+            {
+              "packagePath": "data\\nonvol",
+              "winfsPath": "nonvol",
+              "globs": [
+                "**"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "Databases": {
+      "BASEMAP": "BMAP.BIN",
+      "JEPP_NAV": "nav_db2.bin",
+      "GARMIN_NAV": "nav_db2.bin",
+      "TERRAIN": "active/trn.dat",
+      "FIXED_OBSTACLE": "standard.odb",
+      "ROTOR_OBSTACLE": "standard.odb",
+      "SAFETAXI": "safetaxi.bin",
+      "FLITECHARTS": "active/fc_tpc"
+    }
+  },
+  "HelpResources": {
+    "Manuals": [
+      {
+        "source": "manuals/GTN 625-635-650 Cockpit Reference Guide.pdf",
+        "description": "Covers basic features and procedures."
+      },
+      {
+        "source": "manuals/GTN 725-750 Cockpit Reference Guide.pdf",
+        "description": "Covers basic features and procedures."
+      },
+      {
+        "source": "manuals/GTN 625-635-650 Pilot's Guide.pdf",
+        "description": "Detailed instructions for all features and procedures."
+      },
+      {
+        "source": "manuals/GTN 725-750 Pilot's Guide.pdf",
+        "description": "Detailed instructions for all features and procedures."
+      }
+    ],
+    "Online": [
+      {
+        "source": "https://www.garmin.com/en-US/learning-center/gtn-series",
+        "displayName": "GTN Series Tutorial Videos",
+        "description": "Learn all about the GTN system's functions and capabilities with the GTN tutorial video series."
+      }
+    ]
+  },
+  "LauncherFeatures": {
+    "Trainers_L_CORE": {
+      "Criticality": "Required",
+      "Version": "1.0"
+    },
+    "Multi_Turbo_Aircraft": {
+      "Criticality": "Required",
+      "Version": "1.0"
+    }
+  },
+  "History": [
+    {
+      "BinaryVersion": "6.72.9.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "6.72.8.0",
+      "HasBreakingChanges": true,
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "6.72.7.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "6.72.6.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "6.72.5.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "6.72.4.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "6.72.3.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "6.72.2.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "6.72.1.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "6.62.0.0",
+      "HasBreakingChanges": true
+    },
+    {
+      "BinaryVersion": "6.70.0.0",
+      "HasBreakingChanges": true
+    },
+    {
+      "BinaryVersion": "6.71.0.0",
+      "HasBreakingChanges": true
+    }
+  ]
+}

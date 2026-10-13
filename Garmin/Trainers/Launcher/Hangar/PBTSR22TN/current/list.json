@@ -1,0 +1,12 @@
+{
+  "AircraftIdentifier": "PBTSR22TN",
+  "DisplayName": "Cirrus SR22TN",
+  "Airframe": "SINGLE",
+  "IsHidden": true,
+  "CanBeDeleted": true,
+  "ListModuleData": {
+    "pbt_descriptor_id": "SR22TN",
+    "pbt_local_id": "PBTSR22TN",
+    "pbt_descriptor_sha512": "a3110f25e40ff56a3ef41d2b6f79b11086942833dc936c0d90f8531b07cf26d48f604f1f664e02cd9c86499bbc6f19c6c722391f26895da4f31fd197d5bb06c4"
+  }
+}

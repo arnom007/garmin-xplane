@@ -1,0 +1,188 @@
+{
+  "ManifestVersion": 3,
+  "FamilyId": "GDU620",
+  "VersionId": "7_37",
+  "BinaryVersion": "7.37.45.0",
+  "DisplayName": "GDU 620",
+  "VersionString": "7.37",
+  "ExecutablePath": "bin\\CDUSIMv2.exe",
+  "AvionicsType": "DISPLAY",
+  "IconImagePath": "images\\gdu620_family.png",
+  "MaxInstances": 1,
+  "Models": {
+    "G600": {
+      "id": "G600",
+      "Name": "GDU 620",
+      "IconImagePath": "images\\gdu620_g600_256.png",
+      "DisplayOrderIndex": 5001,
+      "SupportedAirframes": [
+        "SINGLE",
+        "MULTI"
+      ]
+    },
+    "G500H": {
+      "id": "G500H",
+      "Name": "GDU 620",
+      "IconImagePath": "images\\gdu620_g500h_256.png",
+      "DisplayOrderIndex": 5000,
+      "SupportedAirframes": [
+        "ROTOR"
+      ]
+    }
+  },
+  "SupportedAirframes": [
+    "SINGLE",
+    "MULTI",
+    "ROTOR"
+  ],
+  "SupportedSettings": {},
+  "DataFormats": {
+    "DataRouterClientVersion": "19.2.7.0",
+    "Instances": {
+      "all": {
+        "HSDB": 2,
+        "IN": {
+          "A429": {
+            "2": "GAMA_{1}",
+            "3": "NAV_{1}",
+            "4": "GAMA_{2}",
+            "5": "NAV_{2}"
+          },
+          "RS232": {
+            "2": "MAPMX_{1}",
+            "3": "MAPMX_{2}"
+          }
+        },
+        "OUT": {
+          "A429": {
+            "0": "GDU"
+          }
+        }
+      }
+    }
+  },
+  "Winfs": {
+    "Essentials": [
+      {
+        "Transform": {
+          "copy": [
+            {
+              "packagePath": "data\\gdl69",
+              "winfsPath": "gdl69",
+              "globs": [
+                "**"
+              ]
+            },
+            {
+              "packagePath": "data\\gdl88",
+              "winfsPath": "gdl88",
+              "globs": [
+                "**"
+              ]
+            },
+            {
+              "packagePath": "data\\gsr56",
+              "winfsPath": "gsr56",
+              "globs": [
+                "**"
+              ]
+            },
+            {
+              "packagePath": "data\\gwx68",
+              "winfsPath": "gwx68",
+              "globs": [
+                "**"
+              ]
+            },
+            {
+              "packagePath": "data\\WWWx",
+              "winfsPath": "WWWx",
+              "globs": [
+                "**"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "StartingUserData": [
+      {
+        "Transform": {
+          "copy": [
+            {
+              "packagePath": "data\\nonvol",
+              "winfsPath": "nonvol",
+              "globs": [
+                "**"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "Databases": {
+      "BASEMAP": "bmap.bin",
+      "JEPP_NAV": "nav_db2.bin",
+      "GARMIN_NAV": "nav_db2.bin",
+      "TERRAIN": "trn.dat",
+      "FIXED_OBSTACLE": "standard.odb",
+      "ROTOR_OBSTACLE": "standard.odb",
+      "SAFETAXI": "safetaxi.bin",
+      "FLITECHARTS": "fc_tpc",
+      "AIRPORT_DIRECTORY": "apt_dir.gca"
+    }
+  },
+  "HelpResources": {
+    "Manuals": [
+      {
+        "source": "manuals/G500-G600 GDU 620 Cockpit Reference Guide.pdf",
+        "description": "Covers basic features and procedures."
+      },
+      {
+        "source": "manuals/G500H GDU 620 Cockpit Reference Guide.pdf",
+        "description": "Covers basic features and procedures."
+      },
+      {
+        "source": "manuals/G500-G600 GDU 620 Pilot's Guide.pdf",
+        "description": "Detailed instructions for all features and procedures."
+      },
+      {
+        "source": "manuals/G500H GDU 620 Pilot's Guide.pdf",
+        "description": "Detailed instructions for all features and procedures."
+      }
+    ],
+    "Online": []
+  },
+  "LauncherFeatures": {
+    "Trainers_L_CORE": {
+      "Criticality": "Required",
+      "Version": "1.0"
+    }
+  },
+  "History": [
+    {
+      "BinaryVersion": "7.37.45.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "7.37.44.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "7.37.4.0",
+      "HasBreakingChanges": true
+    },
+    {
+      "BinaryVersion": "7.37.3.0",
+      "HasBreakingChanges": true
+    },
+    {
+      "BinaryVersion": "7.37.2.0",
+      "HasBreakingChanges": true
+    },
+    {
+      "BinaryVersion": "7.37.0.0",
+      "HasBreakingChanges": true
+    }
+  ]
+}

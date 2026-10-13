@@ -1,0 +1,11 @@
+{
+  "FullModelId": "Packages.m3__fTXi__v3_50__b3_50_20_0.Models.1060",
+  "FamilyId": "TXi",
+  "InstallationVersion": "3.50.20.0",
+  "Options": {
+    "EisAlignment": "Packages.m3__fTXi__v3_50__b3_50_20_0.SupportedSettings.EisAlignment.Right",
+    "PfdAlignment": "Packages.m3__fTXi__v3_50__b3_50_20_0.SupportedSettings.PfdAlignment.Left",
+    "Layout": "Packages.m3__fTXi__v3_50__b3_50_20_0.SupportedSettings.Layout.PfdMfdEis"
+  },
+  "ModuleData": {}
+}

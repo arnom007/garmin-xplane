@@ -1,0 +1,184 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>PilotTrainers</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>netcoreapp6.0</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="views\pbtpage.baml" />
+    <None Remove="views\pilotlaunchermanualupdateinstructionsview.baml" />
+    <None Remove="pilottrainerstyles.baml" />
+    <None Remove="views\pbtselectionlist.baml" />
+    <None Remove="Aviation_Trainer_Launcher.PilotTrainers.Resources.legacy_app_center_apps.json" />
+    <EmbeddedResource Include="views\pbtpage.baml" LogicalName="views/pbtpage.baml" />
+    <EmbeddedResource Include="views\pilotlaunchermanualupdateinstructionsview.baml" LogicalName="views/pilotlaunchermanualupdateinstructionsview.baml" />
+    <EmbeddedResource Include="pilottrainerstyles.baml" LogicalName="pilottrainerstyles.baml" />
+    <EmbeddedResource Include="views\pbtselectionlist.baml" LogicalName="views/pbtselectionlist.baml" />
+    <EmbeddedResource Include="Aviation_Trainer_Launcher.PilotTrainers.Resources.legacy_app_center_apps.json" LogicalName="Aviation_Trainer_Launcher.PilotTrainers.Resources.legacy_app_center_apps.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="LruSoftwareUpdateModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LruSoftwareUpdateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="LauncherUILib">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LauncherUILib.dll</HintPath>
+    </Reference>
+    <Reference Include="LauncherCoreLib">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LauncherCoreLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LauncherFeatureMatrix">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LauncherFeatureMatrix.dll</HintPath>
+    </Reference>
+    <Reference Include="TrainerPackageLib">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\TrainerPackageLib.dll</HintPath>
+    </Reference>
+    <Reference Include="FeatureMatrix">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\FeatureMatrix.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="LanguageExt.Core">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LanguageExt.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="LauncherSimCommandProtocol">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LauncherSimCommandProtocol.dll</HintPath>
+    </Reference>
+    <Reference Include="Domain.PurposeBuiltTraining">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Domain.PurposeBuiltTraining.dll</HintPath>
+    </Reference>
+    <Reference Include="LauncherAdvisories">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LauncherAdvisories.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamicData">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\DynamicData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\System.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism.Wpf">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Prism.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="TrainerUILib">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\TrainerUILib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel" />
+    <Reference Include="LOLA.Processes">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.Processes.dll</HintPath>
+    </Reference>
+    <Reference Include="LOLA.UI">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="LauncherUpdates">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LauncherUpdates.dll</HintPath>
+    </Reference>
+    <Reference Include="LOLA.Tasks">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq" />
+    <Reference Include="OneOf">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\OneOf.dll</HintPath>
+    </Reference>
+    <Reference Include="Domain.TrainerPackages">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Domain.TrainerPackages.dll</HintPath>
+    </Reference>
+    <Reference Include="LOLA.Redux">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.Redux.dll</HintPath>
+    </Reference>
+    <Reference Include="Domain.JsonParsing">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Domain.JsonParsing.dll</HintPath>
+    </Reference>
+    <Reference Include="IO.AircraftDescriptor">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\IO.AircraftDescriptor.dll</HintPath>
+    </Reference>
+    <Reference Include="Domain.UtilTypes">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Domain.UtilTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="Domain.AvionicsPanel">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Domain.AvionicsPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Domain.AircraftDescriptor">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Domain.AircraftDescriptor.dll</HintPath>
+    </Reference>
+    <Reference Include="Domain.Hashing">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Domain.Hashing.dll</HintPath>
+    </Reference>
+    <Reference Include="TrainerManifestParsing">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\TrainerManifestParsing.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Coordination">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Nito.AsyncEx.Coordination.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Tasks">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Nito.AsyncEx.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common" />
+    <Reference Include="Domain.TrainerSettings">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Domain.TrainerSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable" />
+    <Reference Include="RecordShims">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\RecordShims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions" />
+    <Reference Include="System.Drawing.Primitives" />
+    <Reference Include="FSharp.Core">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\FSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Domain.PanelLayout">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Domain.PanelLayout.dll</HintPath>
+    </Reference>
+    <Reference Include="LOLA.Reactive">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="LOLA.Logging">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="FeedbackModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\FeedbackModule.dll</HintPath>
+    </Reference>
+    <Reference Include="AppCenter">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\AppCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveUI">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\ReactiveUI.dll</HintPath>
+    </Reference>
+    <Reference Include="LOLA.Extensions">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonAdvisories">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\CommonAdvisories.dll</HintPath>
+    </Reference>
+    <Reference Include="LauncherFeatureMatrixAdvisories">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LauncherFeatureMatrixAdvisories.dll</HintPath>
+    </Reference>
+    <Reference Include="VersionManagerModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\VersionManagerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="ScreenshotModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\ScreenshotModule.dll</HintPath>
+    </Reference>
+    <Reference Include="HelpResourceModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\HelpResourceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="LOLA.FileSystem">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.FileSystem.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

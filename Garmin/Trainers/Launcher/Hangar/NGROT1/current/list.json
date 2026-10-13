@@ -1,0 +1,8 @@
+{
+  "AircraftIdentifier": "NGROT1",
+  "DisplayName": "Rotorcraft",
+  "Airframe": "ROTOR",
+  "IsHidden": false,
+  "CanBeDeleted": false,
+  "ListModuleData": {}
+}

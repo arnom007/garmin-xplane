@@ -1,0 +1,8 @@
+{
+  "AircraftIdentifier": "NGMTF1",
+  "DisplayName": "Multi-Engine Turbofan",
+  "Airframe": "MULTITURBOFAN",
+  "IsHidden": false,
+  "CanBeDeleted": false,
+  "ListModuleData": {}
+}

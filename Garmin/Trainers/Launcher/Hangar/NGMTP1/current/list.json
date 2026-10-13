@@ -1,0 +1,8 @@
+{
+  "AircraftIdentifier": "NGMTP1",
+  "DisplayName": "Multi-Engine Turboprop",
+  "Airframe": "TURBO",
+  "IsHidden": false,
+  "CanBeDeleted": false,
+  "ListModuleData": {}
+}

@@ -1,0 +1,68 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>Aviation_Trainer_Launcher</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>netcoreapp6.0</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="views\mainwindow.baml" />
+    <None Remove="styles.baml" />
+    <None Remove="app.baml" />
+    <EmbeddedResource Include="views\mainwindow.baml" LogicalName="views/mainwindow.baml" />
+    <EmbeddedResource Include="styles.baml" LogicalName="styles.baml" />
+    <EmbeddedResource Include="app.baml" LogicalName="app.baml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="LauncherUILib">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LauncherUILib.dll</HintPath>
+    </Reference>
+    <Reference Include="LauncherCoreLib">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LauncherCoreLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism.Unity.Wpf">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Prism.Unity.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism.Wpf">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Prism.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="FeedbackModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\FeedbackModule.dll</HintPath>
+    </Reference>
+    <Reference Include="LruSoftwareUpdateModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LruSoftwareUpdateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="VersionManagerModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\VersionManagerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="ScreenshotModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\ScreenshotModule.dll</HintPath>
+    </Reference>
+    <Reference Include="HelpResourceModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\HelpResourceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PilotTrainers">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\PilotTrainers.dll</HintPath>
+    </Reference>
+    <Reference Include="HttpLib">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\HttpLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

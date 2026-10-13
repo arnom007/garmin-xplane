@@ -1,0 +1,8 @@
+{
+  "AircraftIdentifier": "NGSEP1",
+  "DisplayName": "Single-Engine Piston",
+  "Airframe": "SINGLE",
+  "IsHidden": false,
+  "CanBeDeleted": false,
+  "ListModuleData": {}
+}

@@ -1,0 +1,12 @@
+{
+  "AircraftIdentifier": "PBTPC12",
+  "DisplayName": "Pilatus PC-12/47",
+  "Airframe": "SINGLETURBO",
+  "IsHidden": true,
+  "CanBeDeleted": true,
+  "ListModuleData": {
+    "pbt_descriptor_id": "PC12",
+    "pbt_local_id": "PBTPC12",
+    "pbt_descriptor_sha512": "9c197eeb5546cf214c7031c8c4a56b14ae8345230b66467eac6e3d1111be7294a11d771b46a840bc1e54c731244e63ebb6971430701545ecc15f56b408d19459"
+  }
+}

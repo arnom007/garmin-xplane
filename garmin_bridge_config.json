@@ -1,0 +1,16 @@
+{
+  "xplane_host": "127.0.0.1",
+  "xplane_port": 49002,
+  "update_rate_hz": 120,
+  "garmin_trainer_path": "C:\\Program Files (x86)\\Garmin\\Trainers\\Launcher\\Aviation_Trainer_Launcher.exe",
+  "dll_injector_path": "C:/Users/Arnom/Documents/projeto garminbridge/GarminHook_v2/build/DllInjector.exe",
+  "garmin_hook_dll_path": "C:/Users/Arnom/Documents/projeto garminbridge/GarminHook_v2/build/GarminHook.dll",
+  "txi_process_name": "gdu_7xx_simulator.exe",
+  "gtn_process_name": "gtn_simulator.exe",
+  "txi_kernel_dll": "krnl.dll",
+  "gtn_kernel_dll": "KRNL.dll",
+  "auto_inject": false,
+  "auto_launch_trainer": false,
+  "log_to_file": true,
+  "log_dir": "C:\\Users\\Arnom\\AppData\\Roaming\\GarminBridge"
+}

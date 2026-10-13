@@ -1,0 +1,8 @@
+Continuous Process Log:
+New Process - PID: 26396 | Name: roar.exe | CommandLine: "C:\Program Files (x86)\Garmin\Trainers\Launcher\roar.19.5.1.0\roar.exe"
+New Process - PID: 22728 | Name: roar.exe | CommandLine: "C:\Program Files (x86)\Garmin\Trainers\Launcher\roar.19.5.1.0\roar.exe"
+New Process - PID: 8748 | Name: gtn_simulator.exe | CommandLine: "gtn_simulator.exe" --configpath "C:\Users\Arnom\AppData\Local\Temp\Garmin\Trainers\Launcher\Sessions\116_639152305561409206\sim_session.json" --endpt GTN_Xi_1
+New Process - PID: 27440 | Name: gdu_7xx_simulator.exe | CommandLine: "gdu_7xx_simulator.exe" --configpath "C:\Users\Arnom\AppData\Local\Temp\Garmin\Trainers\Launcher\Sessions\116_639152305561409206\sim_session.json" --endpt TXi_1
+New Process - PID: 24156 | Name: roar.exe | CommandLine: "C:\Program Files (x86)\Garmin\Trainers\Launcher\roar.19.5.1.0\roar.exe"
+New Process - PID: 25852 | Name: gtn_simulator.exe | CommandLine: gtn_simulator.exe --configpath C:\Users\Arnom\AppData\Local\Temp\Garmin\Trainers\Launcher\Sessions\999_1779644758\sim_session.json --endpt GTN_Xi_1
+New Process - PID: 25300 | Name: gdu_7xx_simulator.exe | CommandLine: gdu_7xx_simulator.exe --configpath C:\Users\Arnom\AppData\Local\Temp\Garmin\Trainers\Launcher\Sessions\999_1779644758\sim_session.json --endpt TXi_1

@@ -1,0 +1,16 @@
+{
+  "FullModelId": "Packages.m3__fGTN_Xi__v20_42__b20_42_2_0.Models.750",
+  "FamilyId": "GTN_Xi",
+  "InstallationVersion": "20.42.2.0",
+  "Options": {
+    "taws": "Packages.m3__fGTN_Xi__v20_42__b20_42_2_0.SupportedSettings.taws.TAWS_B"
+  },
+  "ModuleData": {
+    "window_rectangle": {
+      "left": 1026,
+      "top": 0,
+      "width": 510,
+      "height": 508
+    }
+  }
+}

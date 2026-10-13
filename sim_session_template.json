@@ -1,0 +1,47 @@
+{
+  "session_number": 999,
+  "configuration_name": "Single-Engine Turboprop_GTN_Xi_v20.",
+  "environment_settings": {
+    "airframe": "SINGLETURBO",
+    "auto_poweron": true
+  },
+  "trainers": {
+    "TXi_1": {
+      "id": "TXi_1",
+      "slot": {
+        "category": "DISPLAY",
+        "instance_id": 1
+      },
+      "family_name": "TXi",
+      "settings": {
+        "instance_id": 1,
+        "model": "1060",
+        "EisAlignment": "-EIS_RIGHT",
+        "SingleTurboAirframeConfig": "SOCATA (Daher),TBM 700N (TBM 850),Pratt & Whitney,PT6A,-66D",
+        "Layout": "-PFD ON -MFD ON -EIS ON",
+        "PfdAlignment": "-PFD_LEFT"
+      }
+    },
+    "GTN_Xi_1": {
+      "id": "GTN_Xi_1",
+      "slot": {
+        "category": "NAVIGATOR",
+        "instance_id": 1
+      },
+      "family_name": "GTN_Xi",
+      "settings": {
+        "instance_id": 1,
+        "model": "650",
+        "taws": "TAWS_B"
+      }
+    }
+  },
+  "install_slots": {
+    "DISPLAY": {
+      "1": "TXi_1"
+    },
+    "NAVIGATOR": {
+      "1": "GTN_Xi_1"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+# Dependencies & Build artifacts
+node_modules/
+dist/
+build/
+.gradle/
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+
+# Sensitive files & Environment variables
+.env
+.env.*
+*.env
+
+# Planning & Scratch documentation requested to ignore
+PLAN.md
+plan.md
+
+# Large Dumps & Temporary Sessions
+garmin_sessions/
+garmin_session_backup/
+re/dotnet/
+re/tools/
+re/*.bin
+*.ar
+*.gca
+Captura de tela *.png
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+
+# IDE / Editor artifacts
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosv
+*.sln.docstates

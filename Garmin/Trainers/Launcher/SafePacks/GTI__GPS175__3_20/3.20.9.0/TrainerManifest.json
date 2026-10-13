@@ -1,0 +1,214 @@
+{
+  "ManifestVersion": 3,
+  "FamilyId": "GPS175",
+  "VersionId": "3_20",
+  "BinaryVersion": "3.20.9.0",
+  "DisplayName": "GPS 175/GNC 355/GNX 375",
+  "VersionString": "3.20",
+  "ExecutablePath": "bin\\gps_175_simulator.exe",
+  "AvionicsType": "NAVIGATOR",
+  "IconImagePath": "images\\gps175_family.png",
+  "MaxInstances": 1,
+  "Models": {
+    "175": {
+      "id": "175",
+      "Name": "GPS 175",
+      "IconImagePath": "images\\gps175_256.png",
+      "DisplayOrderIndex": 5001,
+      "Winfs": {
+        "links": [
+          {
+            "winfs": "resources_file.gca",
+            "packagePath": "data\\resources_file.gca"
+          }
+        ]
+      }
+    },
+    "355": {
+      "id": "355",
+      "Name": "GNC 355",
+      "IconImagePath": "images\\gnc355_256.png",
+      "DisplayOrderIndex": 5003,
+      "Winfs": {
+        "links": [
+          {
+            "winfs": "resources_file.gca",
+            "packagePath": "data\\resources_file.gca"
+          }
+        ]
+      }
+    },
+    "355A": {
+      "id": "355A",
+      "Name": "GNC 355A",
+      "IconImagePath": "images\\gnc355_256.png",
+      "DisplayOrderIndex": 5002,
+      "Winfs": {
+        "links": [
+          {
+            "winfs": "resources_file.gca",
+            "packagePath": "data\\resources_file.gca"
+          }
+        ]
+      }
+    },
+    "375": {
+      "id": "375",
+      "Name": "GNX 375",
+      "IconImagePath": "images\\gnx375_256.png",
+      "DisplayOrderIndex": 5004,
+      "Winfs": {
+        "links": [
+          {
+            "winfs": "resources_file.gca",
+            "packagePath": "data\\resources_file.gca"
+          }
+        ]
+      }
+    }
+  },
+  "SupportedAirframes": [
+    "SINGLE",
+    "MULTI"
+  ],
+  "SupportedSettings": {},
+  "DataFormats": {
+    "DataRouterClientVersion": "19.2.7.0",
+    "Instances": {
+      "all": {
+        "HSDB": 1,
+        "IN": {
+          "A429": {
+            "0": "GDU"
+          },
+          "GENERIC": {
+            "0": "RDMP"
+          }
+        },
+        "OUT": {
+          "A429": {
+            "4": "GAMA"
+          },
+          "RS232": {
+            "0": "MAPMX"
+          },
+          "GENERIC": {
+            "0": "RDMP"
+          }
+        }
+      }
+    }
+  },
+  "Winfs": {
+    "Essentials": [
+      {
+        "Transform": {
+          "links": [
+            {
+              "winfs": "resources_file.gca",
+              "packagePath": "data\\resources_file.gca"
+            },
+            {
+              "winfs": "sd_card0\\sim",
+              "packagePath": "data\\sim"
+            }
+          ]
+        }
+      }
+    ],
+    "StartingUserData": [
+      {
+        "Transform": {
+          "copy": [
+            {
+              "packagePath": "data\\reg_files\\$(Models)\\$(Airframe)",
+              "winfsPath": "emmc0",
+              "globs": [
+                "**"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "Databases": {
+      "BASEMAP": "emmc0/db/active/BMAP.BIN",
+      "JEPP_NAV": "emmc0/db/active/nav_db2.bin",
+      "GARMIN_NAV": "emmc0/db/active/nav_db2.bin",
+      "TERRAIN": "emmc0/db/active/trn.dat",
+      "FIXED_OBSTACLE": "emmc0/db/active/standard.odb",
+      "ROTOR_OBSTACLE": "emmc0/db/active/standard.odb",
+      "SAFETAXI": "emmc0/db/active/safetaxi.bin"
+    }
+  },
+  "HelpResources": {
+    "Manuals": [
+      {
+        "source": "manuals/GPS 175-GNC 355-GNX 375 Pilot's Guide.pdf",
+        "displayName": "Pilot's Guide",
+        "description": "Detailed instructions for all features and procedures."
+      }
+    ],
+    "Online": []
+  },
+  "LauncherFeatures": {
+    "Trainers_L_CORE": {
+      "Criticality": "Required",
+      "Version": "1.0"
+    },
+    "Trainers_L_CERT_LIST": {
+      "Criticality": "Required",
+      "Version": "2022.1.12"
+    }
+  },
+  "History": [
+    {
+      "BinaryVersion": "3.20.9.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "3.20.8.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "3.20.7.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "3.20.6.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "3.20.5.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "3.20.4.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "3.20.3.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "3.20.2.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "3.20.1.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "3.10.0.0",
+      "HasBreakingChanges": true
+    },
+    {
+      "BinaryVersion": "3.2.0.0",
+      "HasBreakingChanges": true
+    },
+    {
+      "BinaryVersion": "2.4.0.0",
+      "HasBreakingChanges": true
+    }
+  ]
+}

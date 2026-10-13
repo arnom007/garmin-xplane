@@ -1,0 +1,5 @@
+Official session directory: C:\Users\Arnom\AppData\Local\Temp\Garmin\Trainers\Launcher\Sessions\115_639152298066357043
+================================================================================
+sim_session.json (1376 bytes)
+winfs\preflight\GTN_Xi_1_winfs.gca (1714606 bytes)
+winfs\preflight\TXi_1_winfs.gca (207779 bytes)

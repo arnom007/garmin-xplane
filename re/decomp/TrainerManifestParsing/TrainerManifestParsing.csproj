@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>TrainerManifestParsing</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp6.0</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="LanguageExt.Core">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LanguageExt.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Domain.TrainerPackages">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Domain.TrainerPackages.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Domain.UtilTypes">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Domain.UtilTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives" />
+    <Reference Include="System.ObjectModel" />
+    <Reference Include="System.ComponentModel.Annotations" />
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Threading" />
+  </ItemGroup>
+</Project>

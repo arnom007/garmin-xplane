@@ -1,0 +1,9 @@
+{
+  "FullModelId": "Packages.m3__fGTN_Xi__v20_30__b20_30_8_0.Models.750",
+  "FamilyId": "GTN_Xi",
+  "InstallationVersion": "20.30.8.0",
+  "Options": {
+    "taws": "Packages.m3__fGTN_Xi__v20_30__b20_30_8_0.SupportedSettings.taws.TAWS_B"
+  },
+  "ModuleData": {}
+}

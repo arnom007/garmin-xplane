@@ -1,0 +1,12 @@
+{
+  "AircraftIdentifier": "PBTCJ2",
+  "DisplayName": "Cessna 525A Citation CJ2",
+  "Airframe": "MULTITURBOFAN",
+  "IsHidden": true,
+  "CanBeDeleted": true,
+  "ListModuleData": {
+    "pbt_descriptor_id": "CJ2",
+    "pbt_local_id": "PBTCJ2",
+    "pbt_descriptor_sha512": "cf9ead0963e3c979c1eb58355868e1b77a4b77074fa9e6421f756454e47231fbaa75700d5d68e8dba8cf32008f822afe4eec82e2ba4467f8abc8829e1228f295"
+  }
+}

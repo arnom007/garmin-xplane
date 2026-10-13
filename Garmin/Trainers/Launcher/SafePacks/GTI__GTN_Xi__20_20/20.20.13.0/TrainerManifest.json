@@ -1,0 +1,283 @@
+{
+  "ManifestVersion": 3,
+  "FamilyId": "GTN_Xi",
+  "VersionId": "20_20",
+  "BinaryVersion": "20.20.13.0",
+  "DisplayName": "GTN Xi",
+  "VersionString": "20.20",
+  "ExecutablePath": "bin\\gtn_simulator.exe",
+  "AvionicsType": "NAVIGATOR",
+  "IconImagePath": "images\\gtn_xi_family.png",
+  "MaxInstances": 1,
+  "Models": {
+    "750": {
+      "id": "750",
+      "Name": "GTN 750Xi",
+      "IconImagePath": "images\\gtn_xi_750_256.png",
+      "DisplayOrderIndex": 10009,
+      "Winfs": {
+        "links": [
+          {
+            "packagePath": "data\\resource_files.gca",
+            "winfs": "sd_card0\\resource_files.gca"
+          }
+        ]
+      }
+    },
+    "725": {
+      "id": "725",
+      "Name": "GTN 725Xi",
+      "IconImagePath": "images\\gtn_xi_725_256.png",
+      "DisplayOrderIndex": 10007,
+      "Winfs": {
+        "links": [
+          {
+            "packagePath": "data\\resource_files.gca",
+            "winfs": "sd_card0\\resource_files.gca"
+          }
+        ]
+      }
+    },
+    "650": {
+      "id": "650",
+      "Name": "GTN 650Xi",
+      "IconImagePath": "images\\gtn_xi_650_256.png",
+      "DisplayOrderIndex": 10005,
+      "Winfs": {
+        "links": [
+          {
+            "packagePath": "data\\resource_files.gca",
+            "winfs": "sd_card0\\resource_files.gca"
+          }
+        ]
+      }
+    },
+    "635": {
+      "id": "635",
+      "Name": "GTN 635Xi",
+      "IconImagePath": "images\\gtn_xi_635_256.png",
+      "DisplayOrderIndex": 10003,
+      "Winfs": {
+        "links": [
+          {
+            "packagePath": "data\\resource_files.gca",
+            "winfs": "sd_card0\\resource_files.gca"
+          }
+        ]
+      }
+    },
+    "625": {
+      "id": "625",
+      "Name": "GTN 625Xi",
+      "IconImagePath": "images\\gtn_xi_625_256.png",
+      "DisplayOrderIndex": 10001,
+      "Winfs": {
+        "links": [
+          {
+            "packagePath": "data\\resource_files.gca",
+            "winfs": "sd_card0\\resource_files.gca"
+          }
+        ]
+      }
+    }
+  },
+  "SupportedAirframes": [
+    "SINGLE",
+    "MULTI",
+    "ROTOR",
+    "SINGLETURBO",
+    "TURBO"
+  ],
+  "SupportedSettings": {
+    "taws": {
+      "id": "taws",
+      "DisplayText": "Terrain Mode",
+      "Description": "Determines the terrain mode of the GTN Xi.",
+      "DefaultValue": "TAWS_B",
+      "UIControl": "PICKLIST",
+      "IsDisplayed": true,
+      "SupportedValues": {
+        "TAWS_B": {
+          "DisplayText": "TAWS B",
+          "id": "TAWS_B",
+          "SwitchValue": "TAWS_B",
+          "OptionDescription": "TAWS B",
+          "Constraints": [
+            {
+              "SettingToObserve": "Airframe",
+              "DisableOnValues": [
+                "ROTOR"
+              ]
+            }
+          ]
+        },
+        "HTAWS_B": {
+          "DisplayText": "TAWS B",
+          "id": "HTAWS_B",
+          "SwitchValue": "HTAWS_B",
+          "OptionDescription": "TAWS B",
+          "Constraints": [
+            {
+              "SettingToObserve": "Airframe",
+              "EnableOnValues": [
+                "ROTOR"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "DataFormats": {
+    "DataRouterClientVersion": "19.5.2.0",
+    "Instances": {
+      "all": {
+        "HSDB": 4,
+        "IN": {
+          "A429": {
+            "0": "GDU"
+          },
+          "GENERIC": {
+            "0": "RDMP"
+          }
+        },
+        "OUT": {
+          "A429": {
+            "5": "GAMA",
+            "6": "NAV"
+          },
+          "RS232": {
+            "0": "MAPMX"
+          },
+          "GENERIC": {
+            "0": "RDMP"
+          }
+        }
+      }
+    }
+  },
+  "Winfs": {
+    "Essentials": [
+      {
+        "Transform": {
+          "links": [
+            {
+              "packagePath": "data\\resource_files.gca",
+              "winfs": "sd_card0\\resource_files.gca"
+            },
+            {
+              "winfs": "sd_card0\\sim",
+              "packagePath": "data\\sim"
+            },
+            {
+              "packagePath": "data\\chklist.ace",
+              "winfs": "sd_card0\\chklist.ace"
+            },
+            {
+              "packagePath": "data\\user.wpt",
+              "winfs": "sd_card0\\user.wpt"
+            }
+          ]
+        }
+      }
+    ],
+    "StartingUserData": [
+      {
+        "Transform": {
+          "copy": [
+            {
+              "packagePath": "data\\reg_files\\$(Airframe)",
+              "winfsPath": "emmc0",
+              "globs": [
+                "**"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "Databases": {
+      "BASEMAP": "emmc0/db/active/BMAP.BIN",
+      "JEPP_NAV": "emmc0/db/active/nav_db2.bin",
+      "GARMIN_NAV": "emmc0/db/active/nav_db2.bin",
+      "TERRAIN": "emmc0/db/active/trn.dat",
+      "FIXED_OBSTACLE": "emmc0/db/active/standard.odb",
+      "ROTOR_OBSTACLE": "emmc0/db/active/standard.odb",
+      "SAFETAXI": "emmc0/db/active/safetaxi.bin",
+      "FLITECHARTS": "emmc0/db/active/fc_tpc"
+    }
+  },
+  "HelpResources": {
+    "Manuals": [
+      {
+        "source": "manuals/GTN Xi Series Pilot's Guide.pdf",
+        "displayName": "Pilot's Guide",
+        "description": "Detailed instructions for all features and procedures."
+      }
+    ],
+    "Online": []
+  },
+  "LauncherFeatures": {
+    "Trainers_L_CORE": {
+      "Criticality": "Required",
+      "Version": "1.0"
+    },
+    "Multi_Turbo_Aircraft": {
+      "Criticality": "Required",
+      "Version": "1.0"
+    }
+  },
+  "History": [
+    {
+      "BinaryVersion": "20.20.13.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "20.20.12.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "20.20.10.0",
+      "HasBreakingChanges": true,
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "20.20.9.0",
+      "HasBreakingChanges": true,
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "20.20.8.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "20.20.7.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "20.20.6.0",
+      "HasBreakingChanges": true,
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "20.20.5.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "20.20.4.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "20.20.3.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "20.20.2.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "20.20.1.0",
+      "ReleaseNotesPath": "release_notes.html"
+    }
+  ]
+}

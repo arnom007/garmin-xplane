@@ -1,0 +1,165 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>LauncherCoreLib</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp6.0</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="LauncherCoreLib.Resources.public_certs.digicert_1_2020_to_1_2022.cer" />
+    <None Remove="LauncherCoreLib.Resources.public_certs.digicert_1_2022_to_1_2024.cer" />
+    <None Remove="LauncherCoreLib.Resources.public_certs.digicert_6_2019_to_5_2021.cer" />
+    <None Remove="LauncherCoreLib.Resources.public_certs.digicert_6_2023_6_2024.cer" />
+    <None Remove="LauncherCoreLib.Resources.public_certs.digicert_6_2024_to_6_2025.cer" />
+    <None Remove="LauncherCoreLib.Resources.public_certs.digicert_6_2025_to_6_2027.cer" />
+    <None Remove="LauncherCoreLib.Resources.public_certs.Digicert_root_11_2006_to_11_2031.cer" />
+    <None Remove="LauncherCoreLib.Resources.public_certs.Digicert_root_8_2013_to_1_2038.cer" />
+    <None Remove="LauncherCoreLib.Resources.public_certs.thawte_5_2017_to_6_2019.cer" />
+    <EmbeddedResource Include="LauncherCoreLib.Resources.public_certs.digicert_1_2020_to_1_2022.cer" LogicalName="LauncherCoreLib.Resources.public_certs.digicert_1_2020_to_1_2022.cer" />
+    <EmbeddedResource Include="LauncherCoreLib.Resources.public_certs.digicert_1_2022_to_1_2024.cer" LogicalName="LauncherCoreLib.Resources.public_certs.digicert_1_2022_to_1_2024.cer" />
+    <EmbeddedResource Include="LauncherCoreLib.Resources.public_certs.digicert_6_2019_to_5_2021.cer" LogicalName="LauncherCoreLib.Resources.public_certs.digicert_6_2019_to_5_2021.cer" />
+    <EmbeddedResource Include="LauncherCoreLib.Resources.public_certs.digicert_6_2023_6_2024.cer" LogicalName="LauncherCoreLib.Resources.public_certs.digicert_6_2023_6_2024.cer" />
+    <EmbeddedResource Include="LauncherCoreLib.Resources.public_certs.digicert_6_2024_to_6_2025.cer" LogicalName="LauncherCoreLib.Resources.public_certs.digicert_6_2024_to_6_2025.cer" />
+    <EmbeddedResource Include="LauncherCoreLib.Resources.public_certs.digicert_6_2025_to_6_2027.cer" LogicalName="LauncherCoreLib.Resources.public_certs.digicert_6_2025_to_6_2027.cer" />
+    <EmbeddedResource Include="LauncherCoreLib.Resources.public_certs.Digicert_root_11_2006_to_11_2031.cer" LogicalName="LauncherCoreLib.Resources.public_certs.Digicert_root_11_2006_to_11_2031.cer" />
+    <EmbeddedResource Include="LauncherCoreLib.Resources.public_certs.Digicert_root_8_2013_to_1_2038.cer" LogicalName="LauncherCoreLib.Resources.public_certs.Digicert_root_8_2013_to_1_2038.cer" />
+    <EmbeddedResource Include="LauncherCoreLib.Resources.public_certs.thawte_5_2017_to_6_2019.cer" LogicalName="LauncherCoreLib.Resources.public_certs.thawte_5_2017_to_6_2019.cer" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="LanguageExt.Core">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LanguageExt.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="LOLA.Certificates">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="LOLA.Processes">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.Processes.dll</HintPath>
+    </Reference>
+    <Reference Include="AdvancedProcessCreation">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\AdvancedProcessCreation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions" />
+    <Reference Include="System.Reactive">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\System.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="LOLA.FileSystem">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices" />
+    <Reference Include="System.Drawing.Primitives" />
+    <Reference Include="System.Net.NetworkInformation" />
+    <Reference Include="Microsoft.Win32.Registry" />
+    <Reference Include="Nito.AsyncEx.Coordination">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Nito.AsyncEx.Coordination.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Tasks">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Nito.AsyncEx.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="GTI.Net">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\GTI.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable" />
+    <Reference Include="TrainerPackageLib">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\TrainerPackageLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNet.Glob">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\DotNet.Glob.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel" />
+    <Reference Include="System.Runtime.Loader" />
+    <Reference Include="LOLA.Compression">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="GtiArtifacts">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\GtiArtifacts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent" />
+    <Reference Include="Microsoft.Win32.Primitives" />
+    <Reference Include="LOLA.Reactive">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="LOLA.Tasks">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq" />
+    <Reference Include="LOLA.Extensions">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="RecordShims">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\RecordShims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions" />
+    <Reference Include="RoarClient.Net">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\RoarClient.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="DataRouterMatrix">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\DataRouterMatrix.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="ReliableDirectMessageProtocol">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\ReliableDirectMessageProtocol.dll</HintPath>
+    </Reference>
+    <Reference Include="RoarDiscovery">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\RoarDiscovery.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Diagnostics.Process" />
+    <Reference Include="IO.Win32.Events">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\IO.Win32.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="Domain.JsonParsing">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\Domain.JsonParsing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations" />
+    <Reference Include="System.Runtime.Serialization.Primitives" />
+    <Reference Include="System.Data.Common" />
+    <Reference Include="LOLA.Logging">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="ByteSize">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\ByteSize.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.ComponentModel.Primitives" />
+    <Reference Include="System.Xml.XDocument" />
+    <Reference Include="System.Collections.Specialized" />
+    <Reference Include="System.Memory" />
+    <Reference Include="LOLA.StringHelpers">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.StringHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo" />
+    <Reference Include="System.ComponentModel.TypeConverter" />
+    <Reference Include="LOLA.Logging.Reactive">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.Logging.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims" />
+    <Reference Include="System.Web.HttpUtility" />
+    <Reference Include="LOLA.SoftConfig">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\LOLA.SoftConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="IO.Win32.Processes">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Garmin\Trainers\Launcher\IO.Win32.Processes.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

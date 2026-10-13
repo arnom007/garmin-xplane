@@ -1,0 +1,3 @@
+namespace LauncherCoreLib.Models.EventLogging;
+
+public delegate bool ShouldCensorUserDataInValueForProperty(AppCenterPropertyName propName);

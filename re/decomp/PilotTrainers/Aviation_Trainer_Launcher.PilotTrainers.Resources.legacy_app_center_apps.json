@@ -1,0 +1,27 @@
+{
+  "GPS175": 
+  {
+    "Beta": "bdbe0a15-847b-4bd0-b70d-d3fbe7f9d372",
+    "Production": "81897f2c-9f18-4de3-8c1a-a0a5a4ac6a9c"
+  },
+  "GDU620": 
+  {
+    "Beta": "4f3d462e-dcc0-4505-b054-a18628a63cef",
+    "Production": "f1b138b1-1bf6-4069-ba3e-75840fed74a1"
+  },
+  "GTN": 
+  {
+    "Beta": "03db43d2-74ab-4c79-9817-4cd9e72d4662",
+    "Production": "c8579959-bc6b-4f49-9ce9-80299488de42"
+  },
+  "GTN_Xi": 
+  {
+    "Beta": "c56eb8f2-41b5-42db-8e9c-dea1a546b83a",
+    "Production": "870c8d0f-7955-46c8-8cd8-d3638ce0deca"
+  },
+  "TXi": 
+  {
+    "Beta": "92b71081-fc47-4cbe-a863-3e0933c2f6de",
+    "Production": "9094bdf3-3761-4f3f-b994-142b118e63e7"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "FullModelId": "Packages.m3__fTXi__v3_50__b3_50_20_0.Models.1060",
+  "FamilyId": "TXi",
+  "InstallationVersion": "3.50.20.0",
+  "Options": {
+    "Layout": "Packages.m3__fTXi__v3_50__b3_50_20_0.SupportedSettings.Layout.PfdMfd",
+    "PfdAlignment": "Packages.m3__fTXi__v3_50__b3_50_20_0.SupportedSettings.PfdAlignment.Left"
+  },
+  "ModuleData": {}
+}

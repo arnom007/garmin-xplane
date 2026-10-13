@@ -1,0 +1,1 @@
+[PROCESS] Name: roar.exe | PID: 26396 | ParentPID: 21136 | CommandLine: "C:\Program Files (x86)\Garmin\Trainers\Launcher\roar.19.5.1.0\roar.exe"

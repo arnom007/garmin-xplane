@@ -1,0 +1,730 @@
+{
+  "ManifestVersion": 3,
+  "FamilyId": "TXi",
+  "VersionId": "3_62",
+  "BinaryVersion": "3.62.2.0",
+  "DisplayName": "TXi",
+  "VersionString": "3.62",
+  "ExecutablePath": "bin\\gdu_7xx_simulator.exe",
+  "AvionicsType": "DISPLAY",
+  "IconImagePath": "images\\txi_family.png",
+  "MaxInstances": 4,
+  "Models": {
+    "1060": {
+      "id": "1060",
+      "Name": "GDU 1060",
+      "IconImagePath": "images\\txi_1060_pfd_mfd_eis_256.png",
+      "DisplayOrderIndex": 10002
+    },
+    "700L": {
+      "id": "700L",
+      "Name": "GDU 700L",
+      "IconImagePath": "images\\txi_700l_pfd_256.png",
+      "DisplayOrderIndex": 10001,
+      "SupportedAirframes": [
+        "SINGLE",
+        "MULTI",
+        "ROTOR",
+        "SINGLETURBO",
+        "TURBO"
+      ]
+    },
+    "700P": {
+      "id": "700P",
+      "Name": "GDU 700P",
+      "IconImagePath": "images\\txi_700p_pfd_256.png",
+      "DisplayOrderIndex": 10000
+    }
+  },
+  "SupportedAirframes": [
+    "SINGLE",
+    "MULTI",
+    "ROTOR",
+    "SINGLETURBO",
+    "TURBO",
+    "MULTITURBOFAN"
+  ],
+  "SupportedSettings": {
+    "SingleAirframeConfig": {
+      "id": "SingleAirframeConfig",
+      "DisplayText": "Airframe Configuration",
+      "Scope": "Family",
+      "DefaultValue": "PiperCherokee",
+      "Description": "Loads additional airframe characteristics",
+      "UIControl": "PICKLIST",
+      "SupportedValues": {
+        "CirrusSR22": {
+          "id": "CirrusSR22",
+          "DisplayText": "Cirrus SR22",
+          "OptionDescription": "Loads the Cirrus SR22 Single-Engine Piston configuration",
+          "SwitchValue": "Cirrus,SR22,Continental,IO-550,-N",
+          "DisplayOrderIndex": 10010,
+          "Constraints": [
+            {
+              "SettingToObserve": "Airframe",
+              "EnableOnValues": [
+                "SINGLE"
+              ]
+            }
+          ]
+        },
+        "CirrusSR22TN": {
+          "id": "CirrusSR22TN",
+          "DisplayText": "Cirrus SR22TN",
+          "OptionDescription": "Loads the Cirrus SR22TN configuration",
+          "SwitchValue": "Cirrus,SR22,Continental,IO-550,-N (TAT)",
+          "DisplayOrderIndex": 10009,
+          "Constraints": [
+            {
+              "SettingToObserve": "Airframe",
+              "EnableOnValues": [
+                "SINGLE"
+              ]
+            }
+          ]
+        },
+        "PiperCherokee": {
+          "id": "PiperCherokee",
+          "DisplayText": "Piper Cherokee Six",
+          "OptionDescription": "Loads the Piper Cherokee Six configuration",
+          "SwitchValue": "Piper,PA-32-300,Lycoming,IO-540,-K1A5",
+          "DisplayOrderIndex": 10008,
+          "Constraints": [
+            {
+              "SettingToObserve": "Airframe",
+              "EnableOnValues": [
+                "SINGLE"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "MultiAirframeConfig": {
+      "id": "MultiAirframeConfig",
+      "DisplayText": "Airframe Configuration",
+      "Scope": "Family",
+      "DefaultValue": "Baron58",
+      "Description": "Loads additional airframe characteristics",
+      "UIControl": "PICKLIST",
+      "SupportedValues": {
+        "Baron58": {
+          "id": "Baron58",
+          "DisplayText": "Beechcraft Baron",
+          "OptionDescription": "Loads the Baron 58 Multi-Engine Piston configuration",
+          "SwitchValue": "Beechcraft (Textron),58,Continental,IO-520,-C",
+          "Constraints": [
+            {
+              "SettingToObserve": "Airframe",
+              "EnableOnValues": [
+                "MULTI"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "SingleTurboAirframeConfig": {
+      "id": "SingleTurboAirframeConfig",
+      "DisplayText": "Airframe Configuration",
+      "Scope": "Family",
+      "DefaultValue": "TBM850",
+      "Description": "Loads additional airframe characteristics",
+      "UIControl": "PICKLIST",
+      "SupportedValues": {
+        "Cessna208": {
+          "id": "Cessna208",
+          "DisplayText": "Cessna 208",
+          "OptionDescription": "Loads the Cessna 208 configuration",
+          "SwitchValue": "Cessna (Textron),208,Pratt & Whitney,PT6A,-114",
+          "DisplayOrderIndex": 10010,
+          "Constraints": [
+            {
+              "SettingToObserve": "Airframe",
+              "EnableOnValues": [
+                "SINGLETURBO"
+              ]
+            }
+          ]
+        },
+        "PiperPA46350P": {
+          "id": "PiperPA46350P",
+          "DisplayText": "Piper PA-46-350P JETPROP DLX",
+          "OptionDescription": "Loads the Piper PA46-350P configuration",
+          "SwitchValue": "Piper,PA-46-350P,Pratt & Whitney,PT6A,-34",
+          "DisplayOrderIndex": 10009,
+          "Constraints": [
+            {
+              "SettingToObserve": "Airframe",
+              "EnableOnValues": [
+                "SINGLETURBO"
+              ]
+            }
+          ]
+        },
+        "PiperMeridian500TP": {
+          "id": "PiperMeridian500TP",
+          "DisplayText": "Piper PA-46-500TP Meridian",
+          "OptionDescription": "Loads the Piper PA-46-500TP Malibu Meridian configuration",
+          "SwitchValue": "Piper,PA-46-500TP,Pratt & Whitney,PT6A,-42A",
+          "DisplayOrderIndex": 10008,
+          "Constraints": [
+            {
+              "SettingToObserve": "Airframe",
+              "EnableOnValues": [
+                "SINGLETURBO"
+              ]
+            }
+          ]
+        },
+        "PilatusPC1247": {
+          "id": "PilatusPC1247",
+          "DisplayText": "Pilatus PC-12/47",
+          "OptionDescription": "Loads the Pilatus PC-12/47 configuration",
+          "SwitchValue": "Pilatus,PC-12/47,Pratt & Whitney,PT6A,-67B",
+          "Constraints": [
+            {
+              "SettingToObserve": "Airframe",
+              "EnableOnValues": [
+                "SINGLETURBO"
+              ]
+            }
+          ]
+        },
+        "TBM850": {
+          "id": "TBM850",
+          "DisplayText": "SOCATA TBM 850",
+          "OptionDescription": "Loads the SOCATA TBM 850 Turboprop configuration",
+          "SwitchValue": "SOCATA (Daher),TBM 700N (TBM 850),Pratt & Whitney,PT6A,-66D",
+          "DisplayOrderIndex": 10006,
+          "Constraints": [
+            {
+              "SettingToObserve": "Airframe",
+              "EnableOnValues": [
+                "SINGLETURBO"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "MultiTurboAirframeConfig": {
+      "id": "MultiTurboAirframeConfig",
+      "DisplayText": "Airframe Configuration",
+      "Scope": "Family",
+      "DefaultValue": "C90A",
+      "Description": "Loads additional airframe characteristics",
+      "UIControl": "PICKLIST",
+      "SupportedValues": {
+        "C90A": {
+          "id": "C90A",
+          "DisplayText": "Beech King Air C90A",
+          "OptionDescription": "Loads the Beech King Air C90A twin Turboprop configuration",
+          "SwitchValue": "Beechcraft (Textron),C90A,Pratt & Whitney,PT6A,-21",
+          "Constraints": [
+            {
+              "SettingToObserve": "Airframe",
+              "EnableOnValues": [
+                "TURBO"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "MultiTurboFanAirframeConfig": {
+      "id": "MultiTurboFanAirframeConfig",
+      "DisplayText": "Airframe Configuration",
+      "Scope": "Family",
+      "DefaultValue": "CJ2",
+      "Description": "Loads additional airframe characteristics",
+      "UIControl": "PICKLIST",
+      "SupportedValues": {
+        "CJ2": {
+          "id": "CJ2",
+          "DisplayText": "Cessna 525A Citation CJ2",
+          "OptionDescription": "Loads the Cessna 525A Citation CJ2 twin turbofan configuration",
+          "SwitchValue": "Cessna (Textron),525A,Williams,FJ44,-2C",
+          "Constraints": [
+            {
+              "SettingToObserve": "Airframe",
+              "EnableOnValues": [
+                "MULTITURBOFAN"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "RotorcraftAirframeConfig": {
+      "id": "RotorcraftAirframeConfig",
+      "DisplayText": "Airframe Configuration",
+      "Scope": "Family",
+      "DefaultValue": "AS350",
+      "Description": "Loads additional airframe characteristics",
+      "UIControl": "PICKLIST",
+      "SupportedValues": {
+        "AS350": {
+          "id": "AS350",
+          "DisplayText": "AS350",
+          "OptionDescription": "Loads the Airbus (Eurocopter) AS350B2 Rotorcraft configuration",
+          "SwitchValue": "Airbus (Eurocopter),AS350B2,Turbomeca,Arriel,-1D1",
+          "Constraints": [
+            {
+              "SettingToObserve": "Airframe",
+              "EnableOnValues": [
+                "ROTOR"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "Layout": {
+      "id": "Layout",
+      "DisplayText": "Layout",
+      "DefaultValue": "PfdMfdEis",
+      "Description": "Controls layout of the screen",
+      "UIControl": "PICKLIST",
+      "DisplayOrderIndex": 10010,
+      "SupportedValues": {
+        "PfdMfdEis": {
+          "id": "PfdMfdEis",
+          "DisplayText": "PFD MFD EIS",
+          "OptionDescription": "Displays the PFD, MFD, and EIS",
+          "SwitchValue": "-PFD ON -MFD ON -EIS ON",
+          "DisplayOrderIndex": 10017,
+          "Constraints": [
+            {
+              "SettingToObserve": "Models",
+              "EnableOnValues": [
+                "1060"
+              ]
+            },
+            {
+              "SettingToObserve": "Airframe",
+              "DisableOnValues": [
+                "TURBO",
+                "ROTOR"
+              ]
+            }
+          ]
+        },
+        "PfdMfd": {
+          "id": "PfdMfd",
+          "DisplayText": "PFD MFD",
+          "OptionDescription": "Displays the PFD and MFD",
+          "SwitchValue": "-PFD ON -MFD ON",
+          "DisplayOrderIndex": 10013,
+          "Constraints": [
+            {
+              "SettingToObserve": "Models",
+              "EnableOnValues": [
+                "1060"
+              ]
+            }
+          ]
+        },
+        "MfdMfdEis": {
+          "id": "MfdMfdEis",
+          "DisplayText": "MFD MFD EIS",
+          "OptionDescription": "Displays dual MFD and EIS",
+          "SwitchValue": "-PFD OFF -MFD ON -EIS ON",
+          "DisplayOrderIndex": 10012,
+          "Constraints": [
+            {
+              "SettingToObserve": "Models",
+              "EnableOnValues": [
+                "1060"
+              ]
+            },
+            {
+              "SettingToObserve": "Airframe",
+              "DisableOnValues": [
+                "TURBO",
+                "ROTOR",
+                "MULTITURBOFAN"
+              ]
+            }
+          ]
+        },
+        "MfdMfd": {
+          "id": "MfdMfd",
+          "DisplayText": "MFD MFD",
+          "OptionDescription": "Displays dual MFD",
+          "SwitchValue": "-PFD OFF -MFD ON",
+          "DisplayOrderIndex": 10008,
+          "Constraints": [
+            {
+              "SettingToObserve": "Models",
+              "EnableOnValues": [
+                "1060"
+              ]
+            },
+            {
+              "SettingToObserve": "Airframe",
+              "DisableOnValues": [
+                "MULTITURBOFAN"
+              ]
+            }
+          ]
+        },
+        "700Leis": {
+          "id": "700Leis",
+          "DisplayText": "EIS",
+          "OptionDescription": "Displays the EIS",
+          "SwitchValue": "-EIS ON",
+          "DisplayOrderIndex": 10016,
+          "Constraints": [
+            {
+              "SettingToObserve": "Models",
+              "EnableOnValues": [
+                "700L"
+              ]
+            },
+            {
+              "SettingToObserve": "Airframe",
+              "EnableOnValues": [
+                "SINGLE",
+                "MULTI"
+              ]
+            }
+          ]
+        },
+        "pfd": {
+          "id": "pfd",
+          "DisplayText": "PFD",
+          "OptionDescription": "Displays the PFD",
+          "SwitchValue": "-PFD ON",
+          "DisplayOrderIndex": 10019,
+          "Constraints": [
+            {
+              "SettingToObserve": "Models",
+              "EnableOnValues": [
+                "700P",
+                "700L"
+              ]
+            },
+            {
+              "SettingToObserve": "Airframe",
+              "DisableOnValues": [
+                "MULTITURBOFAN"
+              ]
+            }
+          ]
+        },
+        "mfd": {
+          "id": "mfd",
+          "DisplayText": "MFD",
+          "OptionDescription": "Displays the MFD",
+          "SwitchValue": "-MFD ON",
+          "DisplayOrderIndex": 10018,
+          "Constraints": [
+            {
+              "SettingToObserve": "Models",
+              "EnableOnValues": [
+                "700P"
+              ]
+            },
+            {
+              "SettingToObserve": "Airframe",
+              "DisableOnValues": [
+                "MULTITURBOFAN"
+              ]
+            }
+          ]
+        },
+        "700Peis": {
+          "id": "700Peis",
+          "DisplayText": "EIS",
+          "OptionDescription": "Displays the EIS",
+          "SwitchValue": "-EIS ON",
+          "DisplayOrderIndex": 10016,
+          "Constraints": [
+            {
+              "SettingToObserve": "Models",
+              "EnableOnValues": [
+                "700P"
+              ]
+            },
+            {
+              "SettingToObserve": "Airframe",
+              "DisableOnValues": [
+                "ROTOR"
+              ]
+            }
+          ]
+        },
+        "MfdEis": {
+          "id": "MfdEis",
+          "DisplayText": "MFD EIS",
+          "OptionDescription": "Displays the MFD and EIS",
+          "SwitchValue": "-MFD ON -EIS ON",
+          "DisplayOrderIndex": 10014,
+          "Constraints": [
+            {
+              "SettingToObserve": "Models",
+              "EnableOnValues": [
+                "700P",
+                "700L"
+              ]
+            },
+            {
+              "SettingToObserve": "Airframe",
+              "EnableOnValues": [
+                "SINGLE"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "PfdAlignment": {
+      "id": "PfdAlignment",
+      "DisplayText": "PFD Alignment",
+      "Description": "Determines alignment of the PFD",
+      "DefaultValue": "Left",
+      "UIControl": "PICKLIST",
+      "DisplayOrderIndex": 10009,
+      "SupportedValues": {
+        "Left": {
+          "id": "Left",
+          "DisplayText": "Left",
+          "OptionDescription": "Align PFD on the left",
+          "SwitchValue": "-PFD_LEFT",
+          "Constraints": [
+            {
+              "SettingToObserve": "Models",
+              "EnableOnValues": [
+                "1060"
+              ]
+            },
+            {
+              "SettingToObserve": "Layout",
+              "DisableOnValues": [
+                "MfdMfdEis",
+                "MfdMfd"
+              ]
+            }
+          ]
+        },
+        "Right": {
+          "id": "Right",
+          "DisplayText": "Right",
+          "OptionDescription": "Align PFD on the right",
+          "SwitchValue": "-PFD_RIGHT",
+          "Constraints": [
+            {
+              "SettingToObserve": "Models",
+              "EnableOnValues": [
+                "1060"
+              ]
+            },
+            {
+              "SettingToObserve": "Layout",
+              "DisableOnValues": [
+                "MfdMfdEis",
+                "MfdMfd"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "EisAlignment": {
+      "id": "EisAlignment",
+      "DisplayText": "EIS Alignment",
+      "Description": "Determines alignment of the EIS",
+      "DefaultValue": "Right",
+      "UIControl": "PICKLIST",
+      "DisplayOrderIndex": 10008,
+      "SupportedValues": {
+        "Left": {
+          "id": "Left",
+          "DisplayText": "Left",
+          "OptionDescription": "Align EIS on the left",
+          "SwitchValue": "-EIS_LEFT",
+          "Constraints": [
+            {
+              "SettingToObserve": "Layout",
+              "EnableOnValues": [
+                "PfdMfdEis",
+                "MfdMfdEis"
+              ]
+            },
+            {
+              "SettingToObserve": "Models",
+              "EnableOnValues": [
+                "1060"
+              ]
+            }
+          ]
+        },
+        "Right": {
+          "id": "Right",
+          "DisplayText": "Right",
+          "OptionDescription": "Align EIS on the right",
+          "SwitchValue": "-EIS_RIGHT",
+          "Constraints": [
+            {
+              "SettingToObserve": "Layout",
+              "EnableOnValues": [
+                "PfdMfdEis",
+                "MfdMfdEis"
+              ]
+            },
+            {
+              "SettingToObserve": "Models",
+              "EnableOnValues": [
+                "1060"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "DataFormats": {
+    "DataRouterClientVersion": "19.9.1.0",
+    "Instances": {
+      "all": {
+        "HSDB": 4,
+        "IN": {
+          "GENERIC": {
+            "0": "RDMP"
+          }
+        },
+        "OUT": {
+          "GENERIC": {
+            "0": "RDMP"
+          }
+        }
+      }
+    }
+  },
+  "Winfs": {
+    "Essentials": [
+      {
+        "Transform": {
+          "links": [
+            {
+              "winfs": "resource_files.gca",
+              "packagePath": "data\\resource_files.gca"
+            },
+            {
+              "winfs": "sim",
+              "packagePath": "data\\sim"
+            },
+            {
+              "winfs": "aircraft_cfg",
+              "packagePath": "data\\aircraft_cfg"
+            }
+          ],
+          "copy": [
+            {
+              "packagePath": "data\\reg_files\\$(Models)\\$(Airframe)\\",
+              "winfsPath": "nonvol\\emmc0",
+              "globs": [
+                "reg_sys_cnfg*.reg"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "StartingUserData": [
+      {
+        "Transform": {
+          "copy": [
+            {
+              "packagePath": "data\\reg_files\\pilot_profile",
+              "winfsPath": "nonvol\\emmc0\\usr\\Default",
+              "globs": [
+                "**"
+              ]
+            },
+            {
+              "packagePath": "data\\reg_files\\$(Models)\\$(Airframe)",
+              "winfsPath": "nonvol\\emmc0",
+              "globs": [
+                "**"
+              ]
+            },
+            {
+              "packagePath": "data\\sim\\eis\\scenario\\1",
+              "winfsPath": "nonvol\\sd_card0\\scenario\\1",
+              "globs": [
+                "**"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "Databases": {
+      "BASEMAP": "BMAP.BIN",
+      "JEPP_NAV": "nav_db2.bin",
+      "GARMIN_NAV": "nav_db2.bin",
+      "TERRAIN": "trn.dat",
+      "FIXED_OBSTACLE": "standard.odb",
+      "ROTOR_OBSTACLE": "standard.odb",
+      "SAFETAXI": "safetaxi.bin",
+      "FLITECHARTS": "fc_tpc",
+      "AIRPORT_DIRECTORY": "apt_dir.gca"
+    }
+  },
+  "HelpResources": {
+    "Manuals": [
+      {
+        "source": "manuals/G500-G600 TXi Pilot's Guide.pdf",
+        "displayName": "Pilot's Guide",
+        "description": "Detailed instructions for all features and procedures."
+      },
+      {
+        "source": "manuals/G600 TXi - Cockpit Reference Guide for Cessna Model 525A.pdf",
+        "displayName": "G600 TXi - Cockpit Reference Guide for Cessna Model 525A",
+        "description": "Detailed instructions for all features and procedures."
+      },
+      {
+        "source": "manuals/What's New in v3.40.pdf",
+        "displayName": "What's New in v3.40",
+        "description": "An overview of the new features in TXi v3.40."
+      }
+    ],
+    "Online": [
+      {
+        "source": "https://explore.garmin.com/en-US/txi/#fb-video",
+        "displayName": "TXi Introductory Video",
+        "description": "Learn more about the capabilities of the G500/G600/G700 TXi series."
+      }
+    ]
+  },
+  "LauncherFeatures": {
+    "Trainers_L_CORE": {
+      "Criticality": "Required",
+      "Version": "1.0"
+    },
+    "Trainers_L_CERT_LIST": {
+      "Criticality": "Required",
+      "Version": "2023.9.12"
+    },
+    "Multi_Turbo_Aircraft": {
+      "Criticality": "Required",
+      "Version": "1.0"
+    },
+    "Multi_Turbofan_Aircraft": {
+      "Criticality": "Required",
+      "Version": "1.0"
+    }
+  },
+  "History": [
+    {
+      "BinaryVersion": "3.62.2.0",
+      "ReleaseNotesPath": "release_notes.html"
+    },
+    {
+      "BinaryVersion": "3.62.1.0",
+      "ReleaseNotesPath": "release_notes.html"
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "AircraftModuleData": {
+    "winfs_transforms": {
+      "Navigator_1": {
+        "Winfs": {
+          "Essentials": [
+            {
+              "Transform": {
+                "links": [
+                  {
+                    "packagePath": "data\\resource_files.gca",
+                    "winfs": "sd_card0\\resource_files.gca"
+                  },
+                  {
+                    "winfs": "sd_card0\\sim",
+                    "packagePath": "data\\sim"
+                  },
+                  {
+                    "packagePath": "data\\checklists\\SR22TN\\chklist.ace",
+                    "winfs": "sd_card0\\chklist.ace"
+                  },
+                  {
+                    "packagePath": "data\\user.wpt",
+                    "winfs": "sd_card0\\user.wpt"
+                  }
+                ]
+              }
+            }
+          ],
+          "StartingUserData": [
+            {
+              "Transform": {
+                "copy": [
+                  {
+                    "packagePath": "data\\reg_files\\SR22TN\\GTN_Xi_1",
+                    "winfsPath": "emmc0",
+                    "globs": [
+                      "**"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "Databases": {
+            "BASEMAP": "emmc0/db/active/BMAP.BIN",
+            "JEPP_NAV": "emmc0/db/active/nav_db2.bin",
+            "GARMIN_NAV": "emmc0/db/active/nav_db2.bin",
+            "TERRAIN": "emmc0/db/active/trn.dat",
+            "FIXED_OBSTACLE": "emmc0/db/active/standard.odb",
+            "ROTOR_OBSTACLE": "emmc0/db/active/standard.odb",
+            "SAFETAXI": "emmc0/db/active/safetaxi.bin",
+            "FLITECHARTS": "emmc0/db/active/fc_tpc"
+          }
+        }
+      },
+      "Navigator_2": {
+        "Winfs": {
+          "Essentials": [
+            {
+              "Transform": {
+                "links": [
+                  {
+                    "packagePath": "data\\resource_files.gca",
+                    "winfs": "sd_card0\\resource_files.gca"
+                  },
+                  {
+                    "winfs": "sd_card0\\sim",
+                    "packagePath": "data\\sim"
+                  },
+                  {
+                    "packagePath": "data\\checklists\\SR22TN\\chklist.ace",
+                    "winfs": "sd_card0\\chklist.ace"
+                  },
+                  {
+                    "packagePath": "data\\user.wpt",
+                    "winfs": "sd_card0\\user.wpt"
+                  }
+                ]
+              }
+            }
+          ],
+          "StartingUserData": [
+            {
+              "Transform": {
+                "copy": [
+                  {
+                    "packagePath": "data\\reg_files\\SR22TN\\GTN_Xi_2",
+                    "winfsPath": "emmc0",
+                    "globs": [
+                      "**"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "Databases": {
+            "BASEMAP": "emmc0/db/active/BMAP.BIN",
+            "JEPP_NAV": "emmc0/db/active/nav_db2.bin",
+            "GARMIN_NAV": "emmc0/db/active/nav_db2.bin",
+            "TERRAIN": "emmc0/db/active/trn.dat",
+            "FIXED_OBSTACLE": "emmc0/db/active/standard.odb",
+            "ROTOR_OBSTACLE": "emmc0/db/active/standard.odb",
+            "SAFETAXI": "emmc0/db/active/safetaxi.bin",
+            "FLITECHARTS": "emmc0/db/active/fc_tpc"
+          }
+        }
+      },
+      "Display_1": {
+        "Winfs": {
+          "Essentials": [
+            {
+              "Transform": {
+                "links": [
+                  {
+                    "winfs": "resource_files.gca",
+                    "packagePath": "data\\resource_files.gca"
+                  },
+                  {
+                    "winfs": "sim",
+                    "packagePath": "data\\sim"
+                  },
+                  {
+                    "winfs": "aircraft_cfg",
+                    "packagePath": "data\\aircraft_cfg"
+                  }
+                ],
+                "copy": [
+                  {
+                    "packagePath": "data\\reg_files\\SR22TN\\TXi_1",
+                    "winfsPath": "nonvol\\emmc0",
+                    "globs": [
+                      "reg_sys_cnfg*.reg"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "StartingUserData": [
+            {
+              "Transform": {
+                "copy": [
+                  {
+                    "packagePath": "data\\reg_files\\pilot_profile",
+                    "winfsPath": "nonvol\\emmc0\\usr\\Default",
+                    "globs": [
+                      "**"
+                    ]
+                  },
+                  {
+                    "packagePath": "data\\reg_files\\SR22TN\\TXi_1",
+                    "winfsPath": "nonvol\\emmc0",
+                    "globs": [
+                      "**"
+                    ]
+                  },
+                  {
+                    "packagePath": "data\\sim\\eis\\scenario\\1",
+                    "winfsPath": "nonvol\\sd_card0\\scenario\\1",
+                    "globs": [
+                      "**"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "Databases": {
+            "BASEMAP": "BMAP.BIN",
+            "JEPP_NAV": "nav_db2.bin",
+            "GARMIN_NAV": "nav_db2.bin",
+            "TERRAIN": "trn.dat",
+            "FIXED_OBSTACLE": "standard.odb",
+            "ROTOR_OBSTACLE": "standard.odb",
+            "SAFETAXI": "safetaxi.bin",
+            "FLITECHARTS": "fc_tpc",
+            "AIRPORT_DIRECTORY": "apt_dir.gca"
+          }
+        }
+      },
+      "Display_2": {
+        "Winfs": {
+          "Essentials": [
+            {
+              "Transform": {
+                "links": [
+                  {
+                    "winfs": "resource_files.gca",
+                    "packagePath": "data\\resource_files.gca"
+                  },
+                  {
+                    "winfs": "sim",
+                    "packagePath": "data\\sim"
+                  },
+                  {
+                    "winfs": "aircraft_cfg",
+                    "packagePath": "data\\aircraft_cfg"
+                  }
+                ],
+                "copy": [
+                  {
+                    "packagePath": "data\\reg_files\\SR22TN\\TXi_2",
+                    "winfsPath": "nonvol\\emmc0",
+                    "globs": [
+                      "reg_sys_cnfg*.reg"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "StartingUserData": [
+            {
+              "Transform": {
+                "copy": [
+                  {
+                    "packagePath": "data\\reg_files\\pilot_profile",
+                    "winfsPath": "nonvol\\emmc0\\usr\\Default",
+                    "globs": [
+                      "**"
+                    ]
+                  },
+                  {
+                    "packagePath": "data\\reg_files\\SR22TN\\TXi_2",
+                    "winfsPath": "nonvol\\emmc0",
+                    "globs": [
+                      "**"
+                    ]
+                  },
+                  {
+                    "packagePath": "data\\sim\\eis\\scenario\\1",
+                    "winfsPath": "nonvol\\sd_card0\\scenario\\1",
+                    "globs": [
+                      "**"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "Databases": {
+            "BASEMAP": "BMAP.BIN",
+            "JEPP_NAV": "nav_db2.bin",
+            "GARMIN_NAV": "nav_db2.bin",
+            "TERRAIN": "trn.dat",
+            "FIXED_OBSTACLE": "standard.odb",
+            "ROTOR_OBSTACLE": "standard.odb",
+            "SAFETAXI": "safetaxi.bin",
+            "FLITECHARTS": "fc_tpc",
+            "AIRPORT_DIRECTORY": "apt_dir.gca"
+          }
+        }
+      }
+    }
+  }
+}

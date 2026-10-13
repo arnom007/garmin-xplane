@@ -1,0 +1,8 @@
+{
+  "AircraftIdentifier": "NGSTP1",
+  "DisplayName": "Single-Engine Turboprop",
+  "Airframe": "SINGLETURBO",
+  "IsHidden": false,
+  "CanBeDeleted": false,
+  "ListModuleData": {}
+}

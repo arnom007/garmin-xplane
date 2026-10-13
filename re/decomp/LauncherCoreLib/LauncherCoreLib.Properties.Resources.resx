@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="ERR_VAR_INVALID_SWITCH" xml:space="preserve"><value>ne argument.  Some variables may not have been initialized successfully.</value></data>
+  <data name="ERR_VAR_INCTOOL_CAPTION" xml:space="preserve"><value>Problem with procedure file Increment Tool setting</value></data>
+  <data name="POWER_OFF_BUTTON_TEXT" xml:space="preserve"><value>_Power Off</value></data>
+  <data name="COMPANY_NAME" xml:space="preserve"><value>Garmin</value></data>
+  <data name="ERR_VAR_NULL" xml:space="preserve"><value>The argument {0} does not have a defined user variable. Ensure that the variable is defined in the project configuration and that all variables referenced in the current step match defined variables.</value></data>
+  <data name="REGEX_VAR" xml:space="preserve"><value>\$\(\w+\)</value></data>
+  <data name="ARG_VAR_DELIM" xml:space="preserve"><value>;</value></data>
+  <data name="PACKAGES_DIR_NAME" xml:space="preserve"><value>Packages</value></data>
+  <data name="URI_DATETIME_FORMAT" xml:space="preserve"><value>http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx</value></data>
+  <data name="ONE_OR_MORE_CRASH_REPORT_DIRECTORY_PATHS_TOO_LONG" xml:space="preserve"><value>The Windows TEMP directory is nested within too many folders for the trainers to run correctly. This is an uncommon error. Please contact Garmin for support.</value></data>
+  <data name="ARG_RUNALL" xml:space="preserve"><value>runall</value></data>
+  <data name="SimAppInfoSerializationFormat" xml:space="preserve"><value>json</value></data>
+  <data name="ARG_VARS" xml:space="preserve"><value>vars</value></data>
+  <data name="ARG_PROC" xml:space="preserve"><value>proc</value></data>
+  <data name="RegTrainerKeyRoot" xml:space="preserve"><value>HKEY_LOCAL_MACHINE\SOFTWARE\Garmin\{0}\</value></data>
+  <data name="ERR_VAR_INCTOOL_MOREINFO" xml:space="preserve"><value>Increment Version support requires that this variable be defined once and only once.  The first definition will be used.  Saving the procedure file again will cause duplicate entries to be removed.</value></data>
+  <data name="ARG_CLOSEONERROR" xml:space="preserve"><value>x</value></data>
+  <data name="ERR_VAR_MULTIPLE" xml:space="preserve"><value>Multiply defined variables exist in environment for {0}.</value></data>
+  <data name="ERR_VAR_UNIQUE_SUPPORT_VAR" xml:space="preserve"><value>The variable {0} must be defined once and only once in the build procedure to support this feature.  Please set the variable through Project Configuration dialog and remove any duplicate instances found in the build procedure file.</value></data>
+  <data name="VAR_HIDE_PATTERN" xml:space="preserve"><value>********</value></data>
+  <data name="POWER_ON_BUTTON_TEXT" xml:space="preserve"><value>_Power On</value></data>
+  <data name="ARG_EXITWHENDONE" xml:space="preserve"><value>stop</value></data>
+  </root>

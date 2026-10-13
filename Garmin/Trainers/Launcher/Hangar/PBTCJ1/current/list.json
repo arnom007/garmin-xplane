@@ -1,0 +1,12 @@
+{
+  "AircraftIdentifier": "PBTCJ1",
+  "DisplayName": "Cessna Citation CJ1",
+  "Airframe": "MULTITURBOFAN",
+  "IsHidden": true,
+  "CanBeDeleted": true,
+  "ListModuleData": {
+    "pbt_descriptor_id": "CJ1",
+    "pbt_local_id": "PBTCJ1",
+    "pbt_descriptor_sha512": "77f520cb7834154453e4defa83090cc7f337ac35eb9196afaa8ed777f240b5177f338c7e3ca8d67429eea86662c682970d6ef52f478a9f709e3ea211b0a3805a"
+  }
+}

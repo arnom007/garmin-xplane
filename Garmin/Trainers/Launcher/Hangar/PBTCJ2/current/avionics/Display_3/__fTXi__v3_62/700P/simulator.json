@@ -1,0 +1,11 @@
+{
+  "FullModelId": "Packages.m3__fTXi__v3_62__b3_62_2_0.Models.700P",
+  "FamilyId": "TXi",
+  "InstallationVersion": "3.62.2.0",
+  "Options": {
+    "PfdAlignment": "Packages.m3__fTXi__v3_62__b3_62_2_0.SupportedSettings.PfdAlignment.Left",
+    "EisAlignment": "Packages.m3__fTXi__v3_62__b3_62_2_0.SupportedSettings.EisAlignment.Right",
+    "Layout": "Packages.m3__fTXi__v3_62__b3_62_2_0.SupportedSettings.Layout.700Peis"
+  },
+  "ModuleData": {}
+}

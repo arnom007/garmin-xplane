@@ -1,0 +1,8 @@
+{
+  "AircraftIdentifier": "NGMEP1",
+  "DisplayName": "Multi-Engine Piston",
+  "Airframe": "MULTI",
+  "IsHidden": false,
+  "CanBeDeleted": false,
+  "ListModuleData": {}
+}

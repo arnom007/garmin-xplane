@@ -1,0 +1,18 @@
+{
+  "FullModelId": "Packages.m3__fTXi__v3_62__b3_62_2_0.Models.1060",
+  "FamilyId": "TXi",
+  "InstallationVersion": "3.62.2.0",
+  "Options": {
+    "EisAlignment": "Packages.m3__fTXi__v3_62__b3_62_2_0.SupportedSettings.EisAlignment.Right",
+    "PfdAlignment": "Packages.m3__fTXi__v3_62__b3_62_2_0.SupportedSettings.PfdAlignment.Left",
+    "Layout": "Packages.m3__fTXi__v3_62__b3_62_2_0.SupportedSettings.Layout.PfdMfd"
+  },
+  "ModuleData": {
+    "window_rectangle": {
+      "left": 0,
+      "top": 0,
+      "width": 815,
+      "height": 549
+    }
+  }
+}

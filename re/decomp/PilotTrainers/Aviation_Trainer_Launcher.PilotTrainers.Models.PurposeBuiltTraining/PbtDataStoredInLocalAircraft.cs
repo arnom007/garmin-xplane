@@ -1,0 +1,5 @@
+using Domain.PurposeBuiltTraining;
+
+namespace Aviation_Trainer_Launcher.PilotTrainers.Models.PurposeBuiltTraining;
+
+public record PbtDataStoredInLocalAircraft(PbtAircraftDescriptorKey DescriptorKey, PbtLocalAircraftIdentifier LocalId, PbtAircraftDescriptorFileHash DescriptorHash);

@@ -1,0 +1,7 @@
+{
+  "GlobalSettings": {
+    "CrashSendUserPref": "CrashSendUserPref.AlwaysAsk",
+    "NavigationDatabase": "NavigationDatabase.Jeppesen",
+    "AutomaticUpdateChecks": "AutomaticUpdateChecks.enabled"
+  }
+}
