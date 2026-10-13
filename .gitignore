@@ -38,5 +38,5 @@ ENV/
 .idea/
 *.suo
 *.user
-*.userosv
-*.sln.docstates
+# Archives
+*.zip
